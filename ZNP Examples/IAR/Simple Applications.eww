@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\Simple Application - Coordinator.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Simple Application - End Device.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Simple Application - Router.ewp</path>
+  </project>
+  <batchBuild>
+    <batchDefinition>
+      <name>Debug</name>
+      <member>
+        <project>Simple Application - Coordinator</project>
+        <configuration>Debug</configuration>
+      </member>
+      <member>
+        <project>Simple Application - End Device</project>
+        <configuration>Debug</configuration>
+      </member>
+      <member>
+        <project>Simple Application - Router</project>
+        <configuration>Debug</configuration>
+      </member>
+    </batchDefinition>
+  </batchBuild>
+</workspace>
+
+

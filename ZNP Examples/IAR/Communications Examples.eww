@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\Basic Comms - Coordinator - AFZDO.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Basic Comms - Coordinator - SAPI.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Basic Comms - End Device - AFZDO.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Basic Comms - Router - AFZDO.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Basic Comms - Router - SAPI.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\PER Tester - Coordinator.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\PER Tester - Router.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Secure Comms - Coordinator - AFZDO.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Secure Comms - Router - AFZDO.ewp</path>
+  </project>
+  <batchBuild>
+    <batchDefinition>
+      <name>All Debug</name>
+      <member>
+        <project>Basic Comms - Coordinator - AFZDO</project>
+        <configuration>Debug</configuration>
+      </member>
+      <member>
+        <project>Basic Comms - Coordinator - SAPI</project>
+        <configuration>Debug</configuration>
+      </member>
+      <member>
+        <project>Basic Comms - End Device - AFZDO</project>
+        <configuration>Debug</configuration>
+      </member>
+      <member>
+        <project>Basic Comms - Router - AFZDO</project>
+        <configuration>Debug</configuration>
+      </member>
+      <member>
+        <project>Basic Comms - Router - SAPI</project>
+        <configuration>Debug</configuration>
+      </member>
+      <member>
+        <project>PER Tester - Coordinator</project>
+        <configuration>Debug</configuration>
+      </member>
+      <member>
+        <project>PER Tester - Router</project>
+        <configuration>Debug</configuration>
+      </member>
+      <member>
+        <project>Secure Comms - Coordinator - AFZDO</project>
+        <configuration>Debug</configuration>
+      </member>
+      <member>
+        <project>Secure Comms - Router - AFZDO</project>
+        <configuration>Debug</configuration>
+      </member>
+    </batchDefinition>
+  </batchBuild>
+</workspace>
+
+

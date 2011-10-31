@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\Accelerometer Interrupt.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Button Blink.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Hello World.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Read Accelerometer.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Reading Light Sensor.ewp</path>
+  </project>
+  <batchBuild>
+    <batchDefinition>
+      <name>All Debug</name>
+      <member>
+        <project>Accelerometer Interrupt</project>
+        <configuration>Debug</configuration>
+      </member>
+      <member>
+        <project>Button Blink</project>
+        <configuration>Debug</configuration>
+      </member>
+      <member>
+        <project>Hello World</project>
+        <configuration>Debug</configuration>
+      </member>
+      <member>
+        <project>Read Accelerometer</project>
+        <configuration>Debug</configuration>
+      </member>
+      <member>
+        <project>Reading Light Sensor</project>
+        <configuration>Debug</configuration>
+      </member>
+    </batchDefinition>
+  </batchBuild>
+</workspace>
+
+

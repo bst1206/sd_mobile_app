@@ -1,0 +1,311 @@
+###############################################################################
+#                                                                             #
+#                                                       30/Oct/2011  20:26:38 #
+# IAR C/C++ Compiler V5.20.1.30214/W32, Kickstart edition for MSP430          #
+# Copyright 1996-2010 IAR Systems AB.                                         #
+#                                                                             #
+#    __rt_version  =  3                                                       #
+#    __double_size =  32                                                      #
+#    __reg_r4      =  free                                                    #
+#    __reg_r5      =  free                                                    #
+#    __pic         =  no                                                      #
+#    __core        =  430                                                     #
+#    Source file   =  C:\Texas Instruments\CC2530ZNP Mini Kit\ZNP             #
+#                     Examples\example_accelerometer_interrupt.c              #
+#    Command line  =  "C:\Texas Instruments\CC2530ZNP Mini Kit\ZNP            #
+#                     Examples\example_accelerometer_interrupt.c" -lC         #
+#                     "C:\Texas Instruments\CC2530ZNP Mini Kit\ZNP            #
+#                     Examples\IAR\Debug\List\" -o "C:\Texas                  #
+#                     Instruments\CC2530ZNP Mini Kit\ZNP                      #
+#                     Examples\IAR\Debug\Obj\" --no_unroll --no_inline        #
+#                     --no_tbaa --debug -D__MSP430F2274__ -e --double=32      #
+#                     --dlib_config "C:\Program Files (x86)\IAR               #
+#                     Systems\Embedded Workbench 6.0                          #
+#                     Kickstart\430\LIB\DLIB\dl430fn.h" -I "C:\Texas          #
+#                     Instruments\CC2530ZNP Mini Kit\ZNP Examples\IAR\" -I    #
+#                     "C:\Texas Instruments\CC2530ZNP Mini Kit\ZNP            #
+#                     Examples\IAR/..\" -I "C:\Texas Instruments\CC2530ZNP    #
+#                     Mini Kit\ZNP Examples\IAR/../ZNP\" -I "C:\Texas         #
+#                     Instruments\CC2530ZNP Mini Kit\ZNP                      #
+#                     Examples\IAR/../HAL\" -I "C:\Texas                      #
+#                     Instruments\CC2530ZNP Mini Kit\ZNP                      #
+#                     Examples\IAR/../Common\" -Om                            #
+#    List file     =  C:\Texas Instruments\CC2530ZNP Mini Kit\ZNP             #
+#                     Examples\IAR\Debug\List\example_accelerometer_interrupt #
+#                     .lst                                                    #
+#    Object file   =  C:\Texas Instruments\CC2530ZNP Mini Kit\ZNP             #
+#                     Examples\IAR\Debug\Obj\example_accelerometer_interrupt. #
+#                     r43                                                     #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+C:\Texas Instruments\CC2530ZNP Mini Kit\ZNP Examples\example_accelerometer_interrupt.c
+      1          /**
+      2          * @ingroup hwExamples
+      3          * @{ 
+      4          * @file example_accelerometer_interrupt.c
+      5          * 
+      6          * @brief Configures accelerometer to generate an interrupt when motion is detected.
+      7          * 
+      8          * Configures accelerometer to be in motion detect mode with default threshold & time settings to interrupt the MSP430 upon detection of motion.
+      9          * Displays the cause of the motion interrupt (X-axis, Y-axis, or Z-axis).
+     10          * Uses the Hardware Abstraction Layer (hal) to access the accelerometer.
+     11          * Configures Accelerometer with the following settings:
+     12          * - Range = 2g
+     13          * - Disable I2C
+     14          * - Motion Detection Mode
+     15          * - Stay in motion detection mode after interrupt.
+     16          * 
+     17          * @note to clear accelerometer interrupt, must read the Interrupt Status register.
+     18          * @note to change the motion detection threshold, modify register ACCEL_MDTHR.
+     19          * @note to change the motion time threshold, modify register ACCEL_MDFFTMR
+     20          * 
+     21          * @see VTI Technologies document: CMA3000-D01 datasheet
+     22          * @see VTI Technologies document: Product Family Specification, CMA3000-D0X Series 3-axis accelerometer
+     23          * @see VTI Technologies document: Interfacing CMA3000-D01 to an MSP430 ultra low-power microcontroller
+     24          * 
+     25          * @see http://processors.wiki.ti.com/index.php/Tutorial_on_the_Examples and http://e2e.ti.com/support/low_power_rf/default.aspx
+     26          *
+     27          * $Rev: 719 $
+     28          * $Author: dsmith $
+     29          * $Date: 2010-08-19 10:52:09 -0700 (Thu, 19 Aug 2010) $
+     30          *
+     31          * YOU ACKNOWLEDGE AND AGREE THAT THE SOFTWARE AND DOCUMENTATION ARE PROVIDED “AS IS” WITHOUT WARRANTY 
+     32          * OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY, 
+     33          * TITLE, NON-INFRINGEMENT AND FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT SHALL TEXAS INSTRUMENTS 
+     34          * OR ITS LICENSORS BE LIABLE OR OBLIGATED UNDER CONTRACT, NEGLIGENCE, STRICT LIABILITY, CONTRIBUTION, 
+     35          * BREACH OF WARRANTY, OR OTHER LEGAL EQUITABLE THEORY ANY DIRECT OR INDIRECT DAMAGES OR EXPENSES
+     36          * INCLUDING BUT NOT LIMITED TO ANY INCIDENTAL, SPECIAL, INDIRECT, PUNITIVE OR CONSEQUENTIAL DAMAGES, 
+     37          * LOST PROFITS OR LOST DATA, COST OF PROCUREMENT OF SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY 
+     38          * CLAIMS BY THIRD PARTIES (INCLUDING BUT NOT LIMITED TO ANY DEFENSE THEREOF), OR OTHER SIMILAR COSTS.
+     39          */
+     40          
+     41          #include "../HAL/hal_cc2530znp_target_board.h"
+     42          #include "../HAL/hal_vti_cma3000_D01_accelerometer.h"
+     43          
+     44          /** Function pointer points to the function that will be called upon Accelerator Interrupt */
+     45          extern void (*accelerometerIsr)(void);
+     46          
+     47          /** Our Interrupt Service Routine (ISR) for Accelerometer Interrupt */
+     48          void handleAccelerometer();
+     49          
+
+   \                                 In  segment CODE, align 2
+     50          int main( void )
+   \                     main:
+     51          {
+   \   000000   0A12         PUSH.W  R10
+   \   000002   0B12         PUSH.W  R11
+   \   000004   0812         PUSH.W  R8
+   \   000006   0912         PUSH.W  R9
+     52              halInit(); 
+   \   000008   B012....     CALL    #halInit
+     53              printf("\r\nAccelerometer Interrupt Example\r\n");
+   \   00000C   3C40....     MOV.W   #`?<Constant "\\r\\nAccelerometer Inter...">`, R12
+   \   000010   B012....     CALL    #tfp_printf
+     54              halSpiInitAccelerometer();
+   \   000014   B012....     CALL    #halSpiInitAccelerometer
+     55              accelerometerIsr = &handleAccelerometer;
+   \   000018   B240........ MOV.W   #handleAccelerometer, &accelerometerIsr
+     56              halEnableAccelerometerInterrupt(NO_WAKEUP);
+   \   00001E   4C43         MOV.B   #0x0, R12
+   \   000020   B012....     CALL    #halEnableAccelerometerInterrupt
+     57              HAL_ENABLE_INTERRUPTS();
+   \   000024   32D2         EINT
+     58              
+     59              // Configure Accelerometer: 2G range, disable I2C, Motion Detect Mode, Stay in Motion Detect Mode upon motion
+     60              writeAccelerometerRegister(ACCEL_CTRL, G_RANGE_2 | I2C_DIS | MODE_MD_10 | MDET_NO_EXIT);  
+   \   000026   7D40B800     MOV.B   #0xb8, R13
+   \   00002A   6C43         MOV.B   #0x2, R12
+   \   00002C   B012....     CALL    #writeAccelerometerRegister
+     61              
+     62               // 11 bit-time delay required between operations when using SPI
+     63              delayUs(ACCELEROMETER_DELAY_BETWEEN_OPERATIONS_US);                                        
+   \   000030   3840....     MOV.W   #delayUs, R8
+   \   000034   39402C00     MOV.W   #0x2c, R9
+   \   000038   0C49         MOV.W   R9, R12
+   \   00003A   8812         CALL    R8
+     64              
+     65              // Product Identification
+     66              unsigned char whoAmI = readAccelerometerRegister(ACCEL_WHO_AM_I);                           
+   \   00003C   4C43         MOV.B   #0x0, R12
+   \   00003E   B012....     CALL    #readAccelerometerRegister
+   \   000042   4B4C         MOV.B   R12, R11
+     67              delayUs(ACCELEROMETER_DELAY_BETWEEN_OPERATIONS_US); 
+   \   000044   0C49         MOV.W   R9, R12
+   \   000046   8812         CALL    R8
+     68              
+     69              // Product Revision
+     70              unsigned char revId = readAccelerometerRegister(ACCEL_REVID);                               
+   \   000048   5C43         MOV.B   #0x1, R12
+   \   00004A   B012....     CALL    #readAccelerometerRegister
+   \   00004E   4A4C         MOV.B   R12, R10
+     71              delayUs(ACCELEROMETER_DELAY_BETWEEN_OPERATIONS_US); 
+   \   000050   0C49         MOV.W   R9, R12
+   \   000052   8812         CALL    R8
+     72              
+     73              printf("Accelerometer Registers: whoAmI = %02X, revId = %02X\r\n", whoAmI, revId);
+   \   000054   0A12         PUSH.W  R10
+   \   000056   0B12         PUSH.W  R11
+   \   000058   3C40....     MOV.W   #`?<Constant "Accelerometer Registe...">`, R12
+   \   00005C   B012....     CALL    #tfp_printf
+     74              
+     75              //Clear any pending interrupts
+     76              readAccelerometerRegister(ACCEL_INT_STATUS);
+   \   000060   7C400500     MOV.B   #0x5, R12
+   \   000064   B012....     CALL    #readAccelerometerRegister
+     77              delayUs(ACCELEROMETER_DELAY_BETWEEN_OPERATIONS_US); 
+   \   000068   0C49         MOV.W   R9, R12
+   \   00006A   8812         CALL    R8
+     78              
+     79              printf("Waiting for Accelerometer Interrupt...\r\n");
+   \   00006C   3C40....     MOV.W   #`?<Constant "Waiting for Accelerom...">`, R12
+   \   000070   B012....     CALL    #tfp_printf
+   \   000074   2152         ADD.W   #0x4, SP
+     80              while (1) 
+     81              {
+     82                  toggleLed(1);                                                                            //Simple indication that program is running
+   \                     ??main_0:
+   \   000076   5C43         MOV.B   #0x1, R12
+   \   000078   B012....     CALL    #toggleLed
+     83                  delayMs(1000);          
+   \   00007C   3C40E803     MOV.W   #0x3e8, R12
+   \   000080   B012....     CALL    #delayMs
+   \   000084   F83F         JMP     ??main_0
+     84              }
+     85          }
+     86          
+     87          
+     88          /** Accelerometer interrupt service routine.
+     89          @note application must ensure that other operations are not accessing the accelerometer when interrupt fires. 
+     90          (Disable accelerometer interrupt during other communications with accelerometer, or even better, set a flag in the ISR that gets polled by your main application)
+     91          @pre accelerometerIsr function pointer points here; e.g. <code>accelerometerIsr = &handleAccelerometer;</code>
+     92          @pre global interrupts enabled
+     93          @pre accelerometer interrupt enabled; e.g. <code>halEnableAccelerometerInterrupt(NO_WAKEUP);</code>
+     94          @post interrupt is cleared
+     95          */
+
+   \                                 In  segment CODE, align 2
+     96          void handleAccelerometer()
+   \                     handleAccelerometer:
+     97          {
+   \   000000   0A12         PUSH.W  R10
+     98              toggleLed(0); 
+   \   000002   4C43         MOV.B   #0x0, R12
+   \   000004   B012....     CALL    #toggleLed
+     99              unsigned char interruptStatus = readAccelerometerRegister(ACCEL_INT_STATUS);  //will clear the interrupt
+   \   000008   7C400500     MOV.B   #0x5, R12
+   \   00000C   B012....     CALL    #readAccelerometerRegister
+   \   000010   4A4C         MOV.B   R12, R10
+    100              printf("Interrupt: %s(%02X)\r\n", getAccelerometerInterruptReason(interruptStatus),interruptStatus);
+   \   000012   B012....     CALL    #getAccelerometerInterruptReason
+   \   000016   0A12         PUSH.W  R10
+   \   000018   0C12         PUSH.W  R12
+   \   00001A   3C40....     MOV.W   #`?<Constant "Interrupt: %s(%02X)\\r\\n">`, R12
+   \   00001E   B012....     CALL    #tfp_printf
+    101              delayUs(ACCELEROMETER_DELAY_BETWEEN_OPERATIONS_US); //in case this interrupt is immediately followed by another one
+   \   000022   3C402C00     MOV.W   #0x2c, R12
+   \   000026   B012....     CALL    #delayUs
+    102          }
+   \   00002A   2152         ADD.W   #0x4, SP
+   \   00002C   3A41         POP.W   R10
+   \   00002E   3041         RET
+
+   \                                 In  segment DATA16_C, align 1, align-sorted
+   \                     `?<Constant "\\r\\nAccelerometer Inter...">`:
+   \   000000   0D0A41636365 DC8 "\015\012Accelerometer Interrupt Example\015\012"
+   \            6C65726F6D65
+   \            74657220496E
+   \            746572727570
+   \            74204578616D
+   \            706C650D0A00
+
+   \                                 In  segment DATA16_C, align 1, align-sorted
+   \                     `?<Constant "Accelerometer Registe...">`:
+   \   000000   416363656C65 DC8 41H, 63H, 63H, 65H, 6CH, 65H, 72H, 6FH
+   \            726F        
+   \   000008   6D6574657220 DC8 6DH, 65H, 74H, 65H, 72H, 20H, 52H, 65H
+   \            5265        
+   \   000010   676973746572 DC8 67H, 69H, 73H, 74H, 65H, 72H, 73H, 3AH
+   \            733A        
+   \   000018   2077686F416D DC8 20H, 77H, 68H, 6FH, 41H, 6DH, 49H, 20H
+   \            4920        
+   \   000020   3D2025303258 DC8 3DH, 20H, 25H, 30H, 32H, 58H, 2CH, 20H
+   \            2C20        
+   \   000028   726576496420 DC8 72H, 65H, 76H, 49H, 64H, 20H, 3DH, 20H
+   \            3D20        
+   \   000030   253032580D0A DC8 25H, 30H, 32H, 58H, 0DH, 0AH, 0
+   \            00          
+
+   \                                 In  segment DATA16_C, align 1, align-sorted
+   \                     `?<Constant "Waiting for Accelerom...">`:
+   \   000000   57616974696E DC8 "Waiting for Accelerometer Interrupt...\015\012"
+   \            6720666F7220
+   \            416363656C65
+   \            726F6D657465
+   \            7220496E7465
+   \            72727570742E
+   \            2E2E0D0A00  
+
+   \                                 In  segment DATA16_C, align 1, align-sorted
+   \                     `?<Constant "Interrupt: %s(%02X)\\r\\n">`:
+   \   000000   496E74657272 DC8 "Interrupt: %s(%02X)\015\012"
+   \            7570743A2025
+   \            732825303258
+   \            290D0A00    
+    103          
+    104          /* @} */
+
+   Maximum stack usage in bytes:
+
+     Function                       CSTACK
+     --------                       ------
+     handleAccelerometer                8
+       -> toggleLed                     4
+       -> readAccelerometerRegister     4
+       -> getAccelerometerInterruptReason
+                                        4
+       -> tfp_printf                    8
+       -> delayUs                       8
+     main                              14
+       -> halInit                      10
+       -> tfp_printf                   10
+       -> halSpiInitAccelerometer      10
+       -> halEnableAccelerometerInterrupt
+                                       10
+       -> writeAccelerometerRegister
+                                       10
+       -> delayUs                      10
+       -> readAccelerometerRegister    10
+       -> delayUs                      10
+       -> readAccelerometerRegister    10
+       -> delayUs                      10
+       -> tfp_printf                   14
+       -> readAccelerometerRegister    14
+       -> delayUs                      14
+       -> tfp_printf                   14
+       -> toggleLed                    10
+       -> delayMs                      10
+
+
+   Segment part sizes:
+
+     Function/Label                           Bytes
+     --------------                           -----
+     main                                      134
+     handleAccelerometer                        48
+     ?<Constant "\r\nAccelerometer Inter...">   36
+     ?<Constant "Accelerometer Registe...">     55
+     ?<Constant "Waiting for Accelerom...">     41
+     ?<Constant "Interrupt: %s(%02X)\r\n">      22
+
+ 
+ 182 bytes in segment CODE
+ 154 bytes in segment DATA16_C
+ 
+ 182 bytes of CODE  memory
+ 154 bytes of CONST memory
+
+Errors: none
+Warnings: none

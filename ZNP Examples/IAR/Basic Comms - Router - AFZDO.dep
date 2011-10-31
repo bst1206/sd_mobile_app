@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>1029995279</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\..\..\HAL\hal_cc2530znp_target_board.c</file>
+      <file>$PROJ_DIR$\..\..\ZNP\znp_interface.c</file>
+      <file>$PROJ_DIR$\..\..\common\printf.c</file>
+      <file>$PROJ_DIR$\..\..\common\utilities.c</file>
+      <file>$PROJ_DIR$\..\..\ZNP\application_configuration.c</file>
+      <file>$PROJ_DIR$\..\..\ZNP\af_zdo.c</file>
+      <file>$PROJ_DIR$\..\example_basic_comms_router_afzdo.c</file>
+      <file>$PROJ_DIR$\..\..\ZNP\znp_interface_spi.c</file>
+      <file>$PROJ_DIR$\..\znp_example_utils.c</file>
+      <file>$PROJ_DIR$\..\example_basic_comms_coordinator_sapi.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\example_basic_comms_router_afzdo.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\znp_interface_spi.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\printf.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\znp_interface_spi.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\printf.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\af_zdo.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\utilities.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\application_configuration.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\znp_interface.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\af_zdo.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\hal_cc2530znp_target_board.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\application_configuration.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\znp_example_utils.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\znp_interface.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\example_basic_comms_router_afzdo.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\hal_cc2530znp_target_board.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\utilities.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\znp_example_utils.pbi</file>
+      <file>$PROJ_DIR$\Debug\Exe\Basic Comms - Router - AFZDO.d43</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\stdlib.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Basic Comms - Router - AFZDO.pbd</file>
+      <file>$PROJ_DIR$\..\example_hello_world.c</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\ysizet.h</file>
+      <file>$TOOLKIT_DIR$\inc\in430.h</file>
+      <file>$TOOLKIT_DIR$\lib\dlib\dl430fn.r43</file>
+      <file>$PROJ_DIR$\Debug\List\Basic Comms - Router - AFZDO.html</file>
+      <file>$TOOLKIT_DIR$\config\lnk430F2274.xcl</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\stdarg.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\yvals.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Defaults.h</file>
+      <file>$PROJ_DIR$\..\..\common\printf.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\ycheck.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Threads.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\xencoding_limits.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\..\..\common\utilities.h</file>
+      <file>$TOOLKIT_DIR$\inc\msp430x22x4.h</file>
+      <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
+      <file>$PROJ_DIR$\..\..\ZNP\application_configuration.h</file>
+      <file>$PROJ_DIR$\..\..\HAL\hal_cc2530znp_target_board.H</file>
+      <file>$PROJ_DIR$\..\..\HAL\hal_Osram_SFH5711_ambient_light_sensor.c</file>
+      <file>$PROJ_DIR$\..\..\ZNP\znp_interface.h</file>
+      <file>$PROJ_DIR$\..\..\ZNP\znp_commands.h</file>
+      <file>$PROJ_DIR$\..\..\HAL\hal.h</file>
+      <file>$PROJ_DIR$\..\..\ZNP\af_zdo.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\string.h</file>
+      <file>$PROJ_DIR$\..\..\ZNP\znp_interface_spi.h</file>
+      <file>$PROJ_DIR$\..\znp_example_utils.h</file>
+      <file>$TOOLKIT_DIR$\lib\dlib\dl430fn.h</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\..\..\HAL\hal_cc2530znp_target_board.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 20</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 25</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 49 46 33 47 40 37 41 38 39 44 43 42 45 50</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\ZNP\znp_interface.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 23</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 18</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 51 52 55 41 38 39 44 43 42 32 53 49 46 33 47 40 37 45 56</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\common\printf.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 12</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 14</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 40 37 41 38 39 44 43 42</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\common\utilities.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 26</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 16</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 29 41 38 39 44 43 42 32 40 37</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\ZNP\application_configuration.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 21</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 17</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 53 49 46 33 47 40 37 41 38 39 44 43 42 45 48</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\ZNP\af_zdo.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 19</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 15</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 54 48 51 52 53 49 46 33 47 40 37 41 38 39 44 43 42 45 55 32 56</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\example_basic_comms_router_afzdo.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 10</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 24</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 53 49 46 33 47 40 37 41 38 39 44 43 42 45 51 52 48 54 57</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 53 49 46 33 47 40 37 41 38 39 58 44 43 42 45 51 52 48 54 57</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\ZNP\znp_interface_spi.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 11</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 13</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 53 49 46 33 47 40 37 41 38 39 44 43 42 45 56</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\znp_example_utils.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 27</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 22</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 53 49 46 33 47 40 37 41 38 39 44 43 42 45 51 52 54 48 56</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 53 49 46 33 47 40 37 41 38 39 58 44 43 42 45 51 52 54 48 56</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 28 35</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\Basic Comms - Router - AFZDO.d43</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 35</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 36 15 17 24 25 14 16 22 18 13 34</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Obj\Basic Comms - Router - AFZDO.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 19 21 10 20 12 26 27 23 11</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+</project>
+
+

@@ -1,0 +1,50 @@
+###############################################################################
+#                                                                             #
+#                                                       30/Oct/2011  20:24:24 #
+# IAR C/C++ Compiler V5.20.1.30214/W32, Kickstart edition for MSP430          #
+# Copyright 1996-2010 IAR Systems AB.                                         #
+#                                                                             #
+#    __rt_version  =  3                                                       #
+#    __double_size =  32                                                      #
+#    __reg_r4      =  free                                                    #
+#    __reg_r5      =  free                                                    #
+#    __pic         =  no                                                      #
+#    __core        =  430                                                     #
+#    Source file   =  C:\Texas Instruments\CC2530ZNP Mini Kit\ZNP             #
+#                     Examples\IAR\EW6673.tmp                                 #
+#    Command line  =  "C:\Texas Instruments\CC2530ZNP Mini Kit\ZNP            #
+#                     Examples\IAR\EW6673.tmp" -lC "C:\Texas                  #
+#                     Instruments\CC2530ZNP Mini Kit\ZNP                      #
+#                     Examples\IAR\Debug\List\" -o "C:\Texas                  #
+#                     Instruments\CC2530ZNP Mini Kit\ZNP                      #
+#                     Examples\IAR\Debug\Obj\" --no_unroll --no_inline        #
+#                     --no_tbaa --debug -D__MSP430F2274__ -e --double=32      #
+#                     --dlib_config "C:\Program Files (x86)\IAR               #
+#                     Systems\Embedded Workbench 6.0                          #
+#                     Kickstart\430\LIB\DLIB\dl430fn.h" -I "C:\Texas          #
+#                     Instruments\CC2530ZNP Mini Kit\ZNP Examples\IAR\" -I    #
+#                     "C:\Texas Instruments\CC2530ZNP Mini Kit\ZNP            #
+#                     Examples\IAR/..\" -I "C:\Texas Instruments\CC2530ZNP    #
+#                     Mini Kit\ZNP Examples\IAR/../ZNP\" -I "C:\Texas         #
+#                     Instruments\CC2530ZNP Mini Kit\ZNP                      #
+#                     Examples\IAR/../HAL\" -I "C:\Texas                      #
+#                     Instruments\CC2530ZNP Mini Kit\ZNP                      #
+#                     Examples\IAR/../Common\" -Om --predef_macros "C:\Texas  #
+#                     Instruments\CC2530ZNP Mini Kit\ZNP                      #
+#                     Examples\IAR\EW6672.tmp"                                #
+#    List file     =  C:\Texas Instruments\CC2530ZNP Mini Kit\ZNP             #
+#                     Examples\IAR\Debug\List\EW6673.lst                      #
+#    Object file   =  C:\Texas Instruments\CC2530ZNP Mini Kit\ZNP             #
+#                     Examples\IAR\Debug\Obj\EW6673.r43                       #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

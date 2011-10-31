@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>4139609098</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$TOOLKIT_DIR$\lib\dlib\dl430fn.h</file>
+      <file>$TOOLKIT_DIR$\config\lnk430F2274.xcl</file>
+      <file>$PROJ_DIR$\Debug\List\Read Accelerometer.html</file>
+      <file>$TOOLKIT_DIR$\lib\dlib\dl430fn.r43</file>
+      <file>$PROJ_DIR$\..\..\HAL\hal_vti_cma3000_D01_accelerometer.c</file>
+      <file>$PROJ_DIR$\..\..\HAL\hal.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\printf.r43</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\stdarg.h</file>
+      <file>$PROJ_DIR$\..\..\HAL\hal_Osram_SFH5711_ambient_light_sensor.c</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Defaults.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\yvals.h</file>
+      <file>$TOOLKIT_DIR$\inc\msp430x22x4.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Threads.h</file>
+      <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
+      <file>$PROJ_DIR$\..\..\common\printf.h</file>
+      <file>$PROJ_DIR$\..\..\common\utilities.h</file>
+      <file>$TOOLKIT_DIR$\inc\in430.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\xencoding_limits.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\Debug\Exe\Read Accelerometer.d43</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\ycheck.h</file>
+      <file>$PROJ_DIR$\..\..\HAL\hal_vti_cma3000_D01_accelerometer.h</file>
+      <file>$PROJ_DIR$\..\..\HAL\hal_cc2530znp_target_board.H</file>
+      <file>$PROJ_DIR$\Debug\Obj\example_read_accelerometer.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\hal_vti_cma3000_D01_accelerometer.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\hal_vti_cma3000_D01_accelerometer.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\hal_cc2530znp_target_board.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\hal_cc2530znp_target_board.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\printf.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\example_read_accelerometer.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\Read Accelerometer.pbd</file>
+      <file>$PROJ_DIR$\..\..\HAL\hal_cc2530znp_target_board.c</file>
+      <file>$PROJ_DIR$\..\example_read_accelerometer.c</file>
+      <file>$PROJ_DIR$\..\..\common\printf.c</file>
+      <file>$TOOLKIT_DIR$\doc\infocenter\index.ENU.html</file>
+      <file>$PROJ_DIR$\..\example_hello_world.c</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 19 2</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\HAL\hal_vti_cma3000_D01_accelerometer.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 25</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 24</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 5 22 11 16 13 14 7 20 10 9 18 17 12 15</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 5 22 11 16 13 14 7 20 10 9 0 18 17 12 15</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\Read Accelerometer.d43</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 2</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 1 23 27 24 6 3</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Obj\Read Accelerometer.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 29 26 25 28</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\HAL\hal_cc2530znp_target_board.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 26</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 27</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 22 11 16 13 14 7 20 10 9 18 17 12 15 8</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 22 11 16 13 14 7 20 10 9 0 18 17 12 15 8</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\example_read_accelerometer.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 29</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 23</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 22 11 16 13 14 7 20 10 9 18 17 12 15 21</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 22 11 16 13 14 7 20 10 9 0 18 17 12 15 21</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\common\printf.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 28</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 6</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 14 7 20 10 9 18 17 12</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 14 7 20 10 9 0 18 17 12</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+</project>
+
+

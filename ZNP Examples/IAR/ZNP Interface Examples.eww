@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\Get MAC Address.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Get Random.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Get ZNP Version.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Read NV Items.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Read Radio GPIO pins.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Reset Radio.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\RF Tester.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Write NV Items.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Write Radio GPIO pins.ewp</path>
+  </project>
+  <batchBuild>
+    <batchDefinition>
+      <name>All Debug</name>
+      <member>
+        <project>Get MAC Address</project>
+        <configuration>Debug</configuration>
+      </member>
+      <member>
+        <project>Get Random</project>
+        <configuration>Debug</configuration>
+      </member>
+      <member>
+        <project>Get ZNP Version</project>
+        <configuration>Debug</configuration>
+      </member>
+      <member>
+        <project>Read NV Items</project>
+        <configuration>Debug</configuration>
+      </member>
+      <member>
+        <project>Read Radio GPIO pins</project>
+        <configuration>Debug</configuration>
+      </member>
+      <member>
+        <project>Reset Radio</project>
+        <configuration>Debug</configuration>
+      </member>
+      <member>
+        <project>RF Tester</project>
+        <configuration>Debug</configuration>
+      </member>
+      <member>
+        <project>Write NV Items</project>
+        <configuration>Debug</configuration>
+      </member>
+      <member>
+        <project>Write Radio GPIO pins</project>
+        <configuration>Debug</configuration>
+      </member>
+    </batchDefinition>
+  </batchBuild>
+</workspace>
+
+

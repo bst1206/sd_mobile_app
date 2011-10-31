@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>1208081241</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$TOOLKIT_DIR$\doc\infocenter\index.ENU.html</file>
+      <file>$PROJ_DIR$\..\example_basic_comms_router_afzdo.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\znp_interface_spi.pbi</file>
+      <file>$PROJ_DIR$\..\..\HAL\hal_cc2530znp_target_board.c</file>
+      <file>$PROJ_DIR$\..\..\ZNP\application_configuration.c</file>
+      <file>$PROJ_DIR$\..\..\common\utilities.c</file>
+      <file>$PROJ_DIR$\..\..\common\printf.c</file>
+      <file>$PROJ_DIR$\..\..\ZNP\simple_api.c</file>
+      <file>$PROJ_DIR$\..\..\ZNP\znp_interface.c</file>
+      <file>$PROJ_DIR$\..\example_basic_comms_coordinator_sapi.c</file>
+      <file>$PROJ_DIR$\..\..\ZNP\znp_interface_spi.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\utilities.r43</file>
+      <file>$PROJ_DIR$\..\znp_example_utils.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\znp_example_utils.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\znp_example_utils.r43</file>
+      <file>$PROJ_DIR$\Debug\Exe\Basic Comms - Coordinator - SAPI.d43</file>
+      <file>$PROJ_DIR$\Debug\Obj\Basic Comms - Coordinator - SAPI.pbd</file>
+      <file>$TOOLKIT_DIR$\lib\dlib\dl430fn.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\znp_interface.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\example_basic_comms_coordinator_sapi.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\hal_cc2530znp_target_board.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\simple_api.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\hal_cc2530znp_target_board.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\printf.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\znp_interface.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\application_configuration.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\simple_api.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\printf.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\example_basic_comms_coordinator_sapi.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\utilities.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\application_configuration.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\znp_interface_spi.r43</file>
+      <file>$TOOLKIT_DIR$\config\lnk430F2274.xcl</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\ysizet.h</file>
+      <file>$TOOLKIT_DIR$\inc\in430.h</file>
+      <file>$PROJ_DIR$\..\..\ZNP\simple_api.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\ycheck.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\stdarg.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\yvals.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Defaults.h</file>
+      <file>$PROJ_DIR$\..\..\common\printf.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Product.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Threads.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\xencoding_limits.h</file>
+      <file>$PROJ_DIR$\Debug\List\Basic Comms - Coordinator - SAPI.html</file>
+      <file>$TOOLKIT_DIR$\inc\msp430x22x4.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\stdlib.h</file>
+      <file>$PROJ_DIR$\..\..\common\utilities.h</file>
+      <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
+      <file>$PROJ_DIR$\..\..\HAL\hal.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\string.h</file>
+      <file>$PROJ_DIR$\..\..\HAL\hal_Osram_SFH5711_ambient_light_sensor.c</file>
+      <file>$PROJ_DIR$\..\..\HAL\hal_cc2530znp_target_board.H</file>
+      <file>$PROJ_DIR$\..\..\ZNP\znp_interface.h</file>
+      <file>$PROJ_DIR$\..\..\ZNP\application_configuration.h</file>
+      <file>$TOOLKIT_DIR$\lib\dlib\dl430fn.r43</file>
+      <file>$PROJ_DIR$\..\..\ZNP\znp_commands.h</file>
+      <file>$PROJ_DIR$\..\..\ZNP\af_zdo.h</file>
+      <file>$PROJ_DIR$\..\..\ZNP\znp_interface_spi.h</file>
+      <file>$PROJ_DIR$\..\znp_example_utils.h</file>
+      <file>$PROJ_DIR$\..\example_hello_world.c</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\..\..\HAL\hal_cc2530znp_target_board.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 20</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 22</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 52 45 34 48 40 37 36 38 39 41 43 42 47 51</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\ZNP\application_configuration.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 25</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 30</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 49 52 45 34 48 40 37 36 38 39 41 43 42 47 54</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\common\utilities.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 29</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 11</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 46 36 38 39 41 43 42 33 40 37</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 46 36 38 39 17 41 43 42 33 40 37</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\common\printf.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 23</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 27</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 40 37 36 38 39 41 43 42</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\ZNP\simple_api.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 21</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 26</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 35 54 53 56 49 52 45 34 48 40 37 36 38 39 41 43 42 47 50 33 58</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\ZNP\znp_interface.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 18</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 24</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 53 56 50 36 38 39 41 43 42 33 49 52 45 34 48 40 37 47 58</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\example_basic_comms_coordinator_sapi.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 19</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 28</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 52 45 34 48 40 37 36 38 39 41 43 42 47 53 56 35 54 59</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 52 45 34 48 40 37 36 38 39 17 41 43 42 47 53 56 35 54 59</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\ZNP\znp_interface_spi.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 2</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 31</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 49 52 45 34 48 40 37 36 38 39 41 43 42 47 58</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\znp_example_utils.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 13</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 14</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 49 52 45 34 48 40 37 36 38 39 41 43 42 47 53 56 57 54 58</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 49 52 45 34 48 40 37 36 38 39 17 41 43 42 47 53 56 57 54 58</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\Basic Comms - Coordinator - SAPI.d43</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 44</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 32 30 28 22 27 26 11 14 24 31 55</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Obj\Basic Comms - Coordinator - SAPI.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 25 19 20 23 21 29 13 18 2</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 15 44</file>
+        </tool>
+      </outputs>
+    </file>
+  </configuration>
+</project>
+
+
