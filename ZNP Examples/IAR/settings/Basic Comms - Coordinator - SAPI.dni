@@ -1,5 +1,5 @@
 [DebugChecksum]
-Checksum=782947585
+Checksum=1423248601
 [State Storage]
 Control Register=35404
 [Sequencer]
@@ -26,6 +26,16 @@ UseTrigger=1
 TriggerName=main
 LimitSize=0
 ByteLimit=50
+[Stack]
+FillEnabled=0
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnLogOnly=1
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
 [Log file]
 LoggingEnabled=_ 0
 LogFile=_ ""
@@ -33,11 +43,15 @@ Category=_ 0
 [TermIOLog]
 LoggingEnabled=_ 0
 LogFile=_ ""
+[CallStack]
+ShowArgs=0
+[Disassembly]
+MixedMode=1
 [CallStackLog]
 Enabled=0
 [DriverProfiling]
 Enabled=0
-Mode=1836413556
+Mode=0
 Graph=0
 Symbiont=0
 [Breakpoints]
@@ -63,5 +77,6 @@ SR=0
 all registers=0
 File name=
 [Aliases]
-Count=0
+A0=_ "C:\Texas Instruments\CC2530ZNP Mini Kit\HAL\hal_cc2530znp_target_board.c" "C:\Users\Baek\IAR workspace\sd_mobile_app\HAL\hal_cc2530znp_target_board.c"
+Count=1
 SuppressDialog=0

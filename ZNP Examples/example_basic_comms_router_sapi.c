@@ -38,6 +38,7 @@
 #include "../ZNP/znp_interface.h"
 #include "../ZNP/simple_api.h"
 #include "znp_example_utils.h"   //for handleReturnValue() and polling()
+#include <string.h>
 
 //uncomment only ONE of the two options below, or none for no security:
 //#define USE_SECURITY_MODE_PRECONFIGURED_KEYS
@@ -45,10 +46,18 @@
 
 //encryption key used in security
 unsigned char key[16] = {0x44, 0x65, 0x72, 0x65, 0x6B, 0x53, 0x6D, 0x69, 0x74, 0x68, 0x44, 0x65, 0x73, 0x69, 0x67, 0x6E};
+unsigned char msg[100];
+
+unsigned char inChar;
+
+unsigned char msglen=0;
+
+void clearmsg();
+void appendmsg();
 
 int main( void )
 {
-    halInit(); 
+    halInit();
     printf("\r\n++++++++++++++++++++++++++++++++++++++++++++++++++++\r\n");          
     printf("\r\nBasic Communications Example - ROUTER - using Simple API\r\n");
     HAL_ENABLE_INTERRUPTS();
@@ -127,20 +136,60 @@ int main( void )
 #endif    
     
     /* Now the network is running - send a message to the coordinator every few seconds.*/
-    unsigned char counter = 0;
-    unsigned char testMessage[] = {0xF0,0xF1,0xF2,0xF3,0xF4};
+//    unsigned char counter = 0;
+//    unsigned char testMessage[] = {0xF0,0xF1,0xF2,0xF3,0xF4};
 #define TEST_CLUSTER 0x77    
 
         pollAndDisplay();
     
     while (1)
     {
-        printf("Sending Message %u\r\n", counter++);
-        sendData(0, TEST_CLUSTER, testMessage, 5);        
-        handleReturnValue();
-        toggleLed(1);         
-        delayMs(5000);          
+      
+        __low_power_mode_4();
+        
+
+        if(inChar == '0')
+        {
+         printf("Sending Message %s of length %d\r\n", msg, msglen);
+         sendData(0,TEST_CLUSTER, msg, msglen);
+         clearmsg();
+         handleReturnValue();
+         toggleLed(1); 
+        } 
+        else
+        { 
+         appendmsg();
+        }
     }   
 }
 
-/* @} */
+// ------- message manipulations -------
+void clearmsg()
+{
+  for(int i = 0 ; i < msglen ; ++i)
+  {
+    msg[i] = 0;
+  }
+  msglen = 0;
+}
+
+void appendmsg()
+{
+  msg[msglen++] = inChar;
+}
+
+void generateRandomMessageAndSend();
+
+/** Debug console interrupt service routine */
+#pragma vector = USCIAB0RX_VECTOR   //0xFFEE
+__interrupt void USCIAB0RX_ISR(void)
+{
+    if (IFG2 & UCA0RXIFG)  //debug console character received
+    {
+      inChar = (unsigned char)UCA0RXBUF;
+      __low_power_mode_off_on_exit();
+      printf("TEST: %c\r\n", inChar);
+//        debugConsoleIsr(UCA0RXBUF);    //reading this register clears the interrupt flag
+//        
+    } 
+}

@@ -10,9 +10,9 @@
     <debug>1</debug>
     <settings>
       <name>General</name>
-      <archiveVersion>7</archiveVersion>
+      <archiveVersion>8</archiveVersion>
       <data>
-        <version>26</version>
+        <version>27</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>1</debug>
         <option>
@@ -66,8 +66,8 @@
         </option>
         <option>
           <name>Input variant</name>
-          <version>0</version>
-          <state>0</state>
+          <version>1</version>
+          <state>1</state>
         </option>
         <option>
           <name>Input description</name>
@@ -75,8 +75,8 @@
         </option>
         <option>
           <name>Output variant</name>
-          <version>0</version>
-          <state>0</state>
+          <version>1</version>
+          <state>1</state>
         </option>
         <option>
           <name>Output description</name>
@@ -145,13 +145,17 @@
           <version>0</version>
           <state>111101110010111111111000110111111111111111111111111110010111101111010101111111111111111111111111101111111011111001111011111011111111111111111</state>
         </option>
+        <option>
+          <name>RadioL092ModelType</name>
+          <state>0</state>
+        </option>
       </data>
     </settings>
     <settings>
       <name>ICC430</name>
       <archiveVersion>4</archiveVersion>
       <data>
-        <version>28</version>
+        <version>32</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>1</debug>
         <option>
@@ -284,10 +288,6 @@
           <state>0</state>
         </option>
         <option>
-          <name>CCLangSelect</name>
-          <state>0</state>
-        </option>
-        <option>
           <name>CPIC</name>
           <state>1</state>
         </option>
@@ -326,11 +326,6 @@
         <option>
           <name>CCStdIncCheck</name>
           <state>0</state>
-        </option>
-        <option>
-          <name>CCStdIncludePaths</name>
-          <state>$TOOLKIT_DIR$\INC\</state>
-          <state>$TOOLKIT_DIR$\INC\DLIB\</state>
         </option>
         <option>
           <name>CompilerMisraOverride</name>
@@ -378,6 +373,78 @@
           <name>CompilerMisraRules04</name>
           <version>0</version>
           <state>111101110010111111111000110111111111111111111111111110010111101111010101111111111111111111111111101111111011111001111011111011111111111111111</state>
+        </option>
+        <option>
+          <name>IccLang</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>IccCDialect</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>IccAllowVLA</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>IccCppDialect</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>CCPUTAG</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>CCCodeFunctions</name>
+          <state>CODE</state>
+        </option>
+        <option>
+          <name>CCData16</name>
+          <state>DATA</state>
+        </option>
+        <option>
+          <name>CCData20</name>
+          <state>DATA</state>
+        </option>
+        <option>
+          <name>CCIntvec</name>
+          <state>INTVEC</state>
+        </option>
+        <option>
+          <name>CCCstack</name>
+          <state>CSTACK</state>
+        </option>
+        <option>
+          <name>CCRamFuncCode</name>
+          <state>RAMFUNC_CODE</state>
+        </option>
+        <option>
+          <name>CCIsrCode</name>
+          <state>ISR_CODE</state>
+        </option>
+        <option>
+          <name>CCDifunct</name>
+          <state>DIFUNCT</state>
+        </option>
+        <option>
+          <name>AggressiveInlining</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>AggressiveUnrolling</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>IccCppInlineSemantics</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>IccStaticDestr</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>IccFloatSemantics</name>
+          <state>0</state>
         </option>
       </data>
     </settings>
@@ -875,10 +942,10 @@
   <group>
     <name>Common</name>
     <file>
-      <name>$PROJ_DIR$\..\..\Common\printf.c</name>
+      <name>$PROJ_DIR$\..\..\common\printf.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\Common\utilities.c</name>
+      <name>$PROJ_DIR$\..\..\common\utilities.c</name>
     </file>
   </group>
   <group>

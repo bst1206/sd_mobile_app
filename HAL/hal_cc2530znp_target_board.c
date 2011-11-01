@@ -23,7 +23,7 @@
 * $Author: dsmith $
 * $Date: 2010-07-13 10:23:50 -0700 (Tue, 13 Jul 2010) $
 *
-* YOU ACKNOWLEDGE AND AGREE THAT THE SOFTWARE AND DOCUMENTATION ARE PROVIDED “AS IS” WITHOUT WARRANTY 
+* YOU ACKNOWLEDGE AND AGREE THAT THE SOFTWARE AND DOCUMENTATION ARE PROVIDED “AS IS?WITHOUT WARRANTY 
 * OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY, 
 * TITLE, NON-INFRINGEMENT AND FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT SHALL TEXAS INSTRUMENTS 
 * OR ITS LICENSORS BE LIABLE OR OBLIGATED UNDER CONTRACT, NEGLIGENCE, STRICT LIABILITY, CONTRIBUTION, 
@@ -45,7 +45,8 @@ and then point it to a function you created, e.g.
 <code> debugConsoleIsr = &handleDebugConsoleInterrupt;  </code>
 and your function handleDebugConsoleInterrupt() will be called when a byte is received.
 */
-void (*debugConsoleIsr)(char);
+extern void (*debugConsoleIsr)(char);
+
 
 /** Function pointer for the ISR called when the button is pressed */
 void (*buttonIsr)(void);
@@ -68,14 +69,17 @@ unsigned int wakeupFlags = 0;
 unsigned int vloFrequency = 0;
 
 /** Debug console interrupt service routine */
-#pragma vector = USCIAB0RX_VECTOR   //0xFFEE
-__interrupt void USCIAB0RX_ISR(void)
-{
-    if (IFG2 & UCA0RXIFG)  //debug console character received
-    {
-        debugConsoleIsr(UCA0RXBUF);    //reading this register clears the interrupt flag
-    } 
-}
+//#pragma vector = USCIAB0RX_VECTOR   //0xFFEE
+//__interrupt void USCIAB0RX_ISR(void)
+//{
+//    if (IFG2 & UCA0RXIFG)  //debug console character received
+//    {
+//        printf("%c %c %c %c\r\n", UCA0RXBUF, UCA0RXBUF, UCA0RXBUF, UCA0RXBUF);
+//        debugConsoleIsr(UCA0RXBUF);    //reading this register clears the interrupt flag
+//        
+//      
+//    } 
+//}
 
 /** Port 1 interrupt service routine. */
 #pragma vector=PORT1_VECTOR
@@ -191,12 +195,18 @@ void halInit()
     //
     //    Initialize UART debug console:
     //
+    
+    UCA0CTL0 &= ~UC7BIT;                      // 8bit 
     UCA0CTL1 |= UCSSEL_2;                     // SMCLK
     UCA0BR0 = 26; UCA0BR1 = 0;                // 4mHz smclk w/modulation for 9,600bps, table 15-5 
     UCA0MCTL = UCBRS_0 + +UCBRF_1 + UCOS16;   // Modulation UCBRSx=1, over sampling      
     UCA0CTL1 &= ~UCSWRST;                     // **Initialize USCI state machine**
     IE2 |= UCA0RXIE;                          // Enable USCI_A0 RX interrupt
-    
+    /*
+    */
+    __bis_SR_register(GIE);                   // Enable Interrupts
+  
+  
     //
     //   Deselect SPI peripherals:
     //
