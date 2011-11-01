@@ -263,6 +263,10 @@
       <name>$PROJ_DIR$\..\example_basic_comms_router_sapi.c</name>
       <outputs>
         <tool>
+          <name>ICC430</name>
+          <file> 20</file>
+        </tool>
+        <tool>
           <name>BICOMP</name>
           <file> 25</file>
         </tool>

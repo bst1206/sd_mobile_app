@@ -62,17 +62,17 @@
           <Factory>TextEditor</Factory>
           <Filename>$WS_DIR$\..\znp_example_utils.c</Filename>
           <XPos>0</XPos>
-          <YPos>0</YPos>
-          <SelStart>1196</SelStart>
-          <SelEnd>1196</SelEnd>
+          <YPos>93</YPos>
+          <SelStart>4304</SelStart>
+          <SelEnd>4304</SelEnd>
         </Tab>
         <Tab>
           <Factory>TextEditor</Factory>
           <Filename>$WS_DIR$\..\example_basic_comms_router_sapi.c</Filename>
           <XPos>0</XPos>
-          <YPos>137</YPos>
-          <SelStart>5846</SelStart>
-          <SelEnd>5846</SelEnd>
+          <YPos>140</YPos>
+          <SelStart>5973</SelStart>
+          <SelEnd>5973</SelEnd>
         </Tab>
         <ActiveTab>2</ActiveTab>
         <Tab>
@@ -172,6 +172,36 @@
         <Row18>
           <Sizes/>
         </Row18>
+        <Row19>
+          <Sizes/>
+        </Row19>
+        <Row20>
+          <Sizes/>
+        </Row20>
+        <Row21>
+          <Sizes/>
+        </Row21>
+        <Row22>
+          <Sizes/>
+        </Row22>
+        <Row23>
+          <Sizes/>
+        </Row23>
+        <Row24>
+          <Sizes/>
+        </Row24>
+        <Row25>
+          <Sizes/>
+        </Row25>
+        <Row26>
+          <Sizes/>
+        </Row26>
+        <Row27>
+          <Sizes/>
+        </Row27>
+        <Row28>
+          <Sizes/>
+        </Row28>
       </Top>
       <Left>
         <Row0>

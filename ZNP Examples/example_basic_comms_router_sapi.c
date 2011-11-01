@@ -44,13 +44,16 @@
 //#define USE_SECURITY_MODE_PRECONFIGURED_KEYS
 //#define USE_SECURITY_MODE_COORD_DIST_KEYS
 
+#define MSG_SIZE 300
+
 //encryption key used in security
 unsigned char key[16] = {0x44, 0x65, 0x72, 0x65, 0x6B, 0x53, 0x6D, 0x69, 0x74, 0x68, 0x44, 0x65, 0x73, 0x69, 0x67, 0x6E};
-unsigned char msg[100];
+unsigned char msg[MSG_SIZE];
 
 unsigned char inChar;
 
 unsigned char msglen=0;
+unsigned short expectedLength; 
 
 void clearmsg();
 void appendmsg();
@@ -59,7 +62,7 @@ int main( void )
 {
     halInit();
     printf("\r\n++++++++++++++++++++++++++++++++++++++++++++++++++++\r\n");          
-    printf("\r\nBasic Communications Example - ROUTER - using Simple API\r\n");
+//    printf("\r\nBasic Communications Example - ROUTER - using Simple API\r\n");
     HAL_ENABLE_INTERRUPTS();
     
     //Simple check to ensure that both security options weren't #defined.
@@ -145,21 +148,39 @@ int main( void )
     while (1)
     {
       
-        __low_power_mode_4();
+      __low_power_mode_4();
+      
+      //message construction
+      if(msglen == 0) //if first byte,
+      {
+        expectedLength = inChar-'0';
+        expectedLength <<= 8;
+        msglen++;
+      }
+      else if(msglen == 1) //if second byte,
+      {
+        expectedLength += inChar-'0';
+        msglen++;
+        printf("DEBUG: expeceted message length: %d\r\n", expectedLength);
+        if(expectedLength == 0)
+        {
+         clearmsg();
+        }
+      }
+      else
+      {
+        appendmsg();
+        if(msglen-2 == expectedLength)
+        {
+          printf("Sending Message %s of length %d\r\n", msg, expectedLength);
+          sendData(0,TEST_CLUSTER, msg, msglen);
+          clearmsg();
+          handleReturnValue();
+          toggleLed(1); 
+        }
+       }  
         
 
-        if(inChar == '0')
-        {
-         printf("Sending Message %s of length %d\r\n", msg, msglen);
-         sendData(0,TEST_CLUSTER, msg, msglen);
-         clearmsg();
-         handleReturnValue();
-         toggleLed(1); 
-        } 
-        else
-        { 
-         appendmsg();
-        }
     }   
 }
 
@@ -175,7 +196,8 @@ void clearmsg()
 
 void appendmsg()
 {
-  msg[msglen++] = inChar;
+  msg[msglen-2] = inChar;
+  msglen++;
 }
 
 void generateRandomMessageAndSend();
