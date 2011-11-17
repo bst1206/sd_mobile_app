@@ -2,10 +2,13 @@
 
 <workspace>
   <project>
-    <path>$WS_DIR$\..\..\..\..\Users\Baek\UTD\Courses\11Fall\CE4370\Labs\Lab4\Lab4.ewp</path>
+    <path>$WS_DIR$\Basic Comms - Coordinator - SAPI.ewp</path>
   </project>
   <project>
-    <path>$WS_DIR$\..\..\..\..\Users\Baek\UTD\Courses\11Fall\CE4370\Labs\Lab5\Lab5.ewp</path>
+    <path>$WS_DIR$\Basic Comms - Router - SAPI.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\..\..\..\ce_final\snake.ewp</path>
   </project>
   <batchBuild/>
 </workspace>

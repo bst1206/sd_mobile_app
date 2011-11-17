@@ -953,6 +953,9 @@
     <file>
       <name>$PROJ_DIR$\..\..\HAL\hal_cc2530znp_target_board.c</name>
     </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\HAL\hal_lcd.h</name>
+    </file>
   </group>
   <group>
     <name>ZNP</name>

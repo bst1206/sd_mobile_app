@@ -19,7 +19,7 @@
 <p><a name="Invocation Map"></a><table>
 <tr valign=top>
   <td><font size=2><b>Link&nbsp;time</font></b>
-  <td><font size=2>31/Oct/2011  09:40:35</font>
+  <td><font size=2>17/Nov/2011  16:21:24</font>
 <tr valign=top>
   <td><font size=2><b>Target&nbsp;CPU</font></b>
   <td><font size=2>MSP430</font>
@@ -55,9 +55,9 @@
 <b>-l</b>
 "C:\Users\Baek\IAR workspace\sd_mobile_app\ZNP Examples\IAR\Debug\List\Basic Comms - Coordinator - SAPI.html"
 <b>-x</b>msnh
-<b>"-</b>"C:\Program Files\IAR Systems\Embedded Workbench 6.0 Kickstart\430\LIB\"
+<b>"-</b>"C:\Program Files\IAR Systems\Embedded Workbench 6.0 Evaluation\430\LIB\"
 <b>-f</b>
-"C:\Program Files\IAR Systems\Embedded Workbench 6.0 Kickstart\430\CONFIG\lnk430F2274.xcl"
+"C:\Program Files\IAR Systems\Embedded Workbench 6.0 Evaluation\430\CONFIG\lnk430F2274.xcl"
 ( <b>-c</b>msp430
 <b>-Q</b>CODE_I=CODE_ID
 <b>-Z</b>(DATA)DATA16_I,DATA16_Z,DATA16_N,DATA16_HEAP+_DATA16_HEAP_SIZE=0200-05FF
@@ -75,7 +75,7 @@
 <b>-Z</b>(CODE)RESET=FFFE-FFFF
 ) <b>-D</b>_STACK_SIZE=50
 <b>-r</b>t
-"C:\Program Files\IAR Systems\Embedded Workbench 6.0 Kickstart\430\LIB\DLIB\dl430fn.r43"
+"C:\Program Files\IAR Systems\Embedded Workbench 6.0 Evaluation\430\LIB\DLIB\dl430fn.r43"
 <b>-e</b>_PrintfSmall=_Printf
 <b>-e</b>_ScanfSmall=_Scanf
 <b>-D</b>_DATA16_HEAP_SIZE=50
@@ -88,7 +88,7 @@ __program_start
 
 
 <p><hr><a name="Program Entry"></a><p>
-       Program entry at :           81B8  Relocatable, from module : ?cstart
+       Program entry at :           81DE  Relocatable, from module : ?cstart
 
 
 <p><hr><p>
@@ -172,65 +172,184 @@ __program_start
 <tr valign=top>
   <td rowspan=0 ><font size=2><b>C:\Users\Baek\IAR workspace\sd_mobile_app\ZNP Examples\IAR\Debug\Obj\application_configuration.r43</b></font>
 <tr valign=top>
-  <td rowspan=12 ><font size=2><b>C:\Users\Baek\IAR workspace\sd_mobile_app\ZNP Examples\IAR\Debug\Obj\example_basic_comms_coordinator_sapi.r43</b></font>
-  <td rowspan=12><font size=2><a name="MM\example_basic_comms_coordinator_sapi"><b>example_basic_comms_coordinator_sapi</b></a><br>Program module</font>
-  <td rowspan=1 ><font size=2><b><a name="MM\example_basic_comms_coordinator_sapi\Segpart_15"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8398 - 8449<br>Segment part 15.</font>
+  <td rowspan=35 ><font size=2><b>C:\Users\Baek\IAR workspace\sd_mobile_app\ZNP Examples\IAR\Debug\Obj\example_basic_comms_coordinator_sapi.r43</b></font>
+  <td rowspan=35><font size=2><a name="MM\example_basic_comms_coordinator_sapi"><b>example_basic_comms_coordinator_sapi</b></a><br>Program module</font>
+  <td rowspan=2 ><font size=2><b><a name="MM\example_basic_comms_coordinator_sapi\Segpart_1"><b>DATA16_AN</b></a></b><br>Relative segment<br> 002A - 002A<br>Segment part 1. ROOT.</font>
+  <td><font size=2>  <i><font size=2>Intra module refs</font>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_26">ConfigureTimerUart</a>
+<br><a href="#MM\hal_cc2530znp_target_board\Segpart_81">halInit (hal_cc2530znp_target_board)</a>
+<tr valign=top>
+  <td nowrap><font size=2><a name="MM\example_basic_comms_coordinator_sapi\P2DIR"><b>P2DIR</b></a>
+</font>
+  <td><font size=2>002A </font>
+  <td align=center><font size=2>-</font>
+<tr valign=top>
+  <td rowspan=2 ><font size=2><b><a name="MM\example_basic_comms_coordinator_sapi\Segpart_2"><b>DATA16_AN</b></a></b><br>Relative segment<br> 002E - 002E<br>Segment part 2. ROOT.</font>
+  <td><font size=2>  <i><font size=2>Intra module refs</font>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_26">ConfigureTimerUart</a>
+<br><a href="#MM\hal_cc2530znp_target_board\Segpart_81">halInit (hal_cc2530znp_target_board)</a>
+<tr valign=top>
+  <td nowrap><font size=2><a name="MM\example_basic_comms_coordinator_sapi\P2SEL"><b>P2SEL</b></a>
+</font>
+  <td><font size=2>002E </font>
+  <td align=center><font size=2>-</font>
+<tr valign=top>
+  <td rowspan=2 ><font size=2><b><a name="MM\example_basic_comms_coordinator_sapi\Segpart_3"><b>DATA16_AN</b></a></b><br>Relative segment<br> 0160 - 0161<br>Segment part 3. ROOT.</font>
+  <td><font size=2>  <i><font size=2>Intra module refs</font>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_26">ConfigureTimerUart</a>
+<br><a href="#MM\hal_cc2530znp_target_board\Segpart_81">halInit (hal_cc2530znp_target_board)</a>
+<tr valign=top>
+  <td nowrap><font size=2><a name="MM\example_basic_comms_coordinator_sapi\TACTL"><b>TACTL</b></a>
+</font>
+  <td><font size=2>0160 </font>
+  <td align=center><font size=2>-</font>
+<tr valign=top>
+  <td rowspan=2 ><font size=2><b><a name="MM\example_basic_comms_coordinator_sapi\Segpart_4"><b>DATA16_AN</b></a></b><br>Relative segment<br> 0162 - 0163<br>Segment part 4. ROOT.</font>
+  <td><font size=2>  <i><font size=2>Intra module refs</font>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_26">ConfigureTimerUart</a>
+<br><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_28">Timer_A</a>
+<br><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_25">Transmit</a>
+<tr valign=top>
+  <td nowrap><font size=2><a name="MM\example_basic_comms_coordinator_sapi\TACCTL0"><b>TACCTL0</b></a>
+</font>
+  <td><font size=2>0162 </font>
+  <td align=center><font size=2>-</font>
+<tr valign=top>
+  <td rowspan=2 ><font size=2><b><a name="MM\example_basic_comms_coordinator_sapi\Segpart_5"><b>DATA16_AN</b></a></b><br>Relative segment<br> 0170 - 0171<br>Segment part 5. ROOT.</font>
+  <td><font size=2>  <i><font size=2>Intra module refs</font>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_25">Transmit</a>
+<tr valign=top>
+  <td nowrap><font size=2><a name="MM\example_basic_comms_coordinator_sapi\TAR"><b>TAR</b></a>
+</font>
+  <td><font size=2>0170 </font>
+  <td align=center><font size=2>-</font>
+<tr valign=top>
+  <td rowspan=2 ><font size=2><b><a name="MM\example_basic_comms_coordinator_sapi\Segpart_6"><b>DATA16_AN</b></a></b><br>Relative segment<br> 0172 - 0173<br>Segment part 6. ROOT.</font>
+  <td><font size=2>  <i><font size=2>Intra module refs</font>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_28">Timer_A</a>
+<br><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_25">Transmit</a>
+<tr valign=top>
+  <td nowrap><font size=2><a name="MM\example_basic_comms_coordinator_sapi\TACCR0"><b>TACCR0</b></a>
+</font>
+  <td><font size=2>0172 </font>
+  <td align=center><font size=2>-</font>
+<tr valign=top>
+  <td rowspan=2 ><font size=2><b><a name="MM\example_basic_comms_coordinator_sapi\Segpart_20"><b>DATA16_Z</b></a></b><br>Relative segment<br> 0210 - 0210<br>Segment part 20.</font>
+  <td><font size=2>  <i><font size=2>Intra module refs</font>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_28">Timer_A</a>
+<br><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_25">Transmit</a>
+<tr valign=top>
+  <td nowrap><font size=2><a name="MM\example_basic_comms_coordinator_sapi\BitCnt"><b>BitCnt</b></a>
+</font>
+  <td><font size=2>0210 </font>
+  <td align=center><font size=2>-</font>
+<tr valign=top>
+  <td rowspan=2 ><font size=2><b><a name="MM\example_basic_comms_coordinator_sapi\Segpart_21"><b>DATA16_Z</b></a></b><br>Relative segment<br> 0200 - 0201<br>Segment part 21.</font>
+  <td><font size=2>  <i><font size=2>Intra module refs</font>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_26">ConfigureTimerUart</a>
+<br><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_28">Timer_A</a>
+<br><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_25">Transmit</a>
+<tr valign=top>
+  <td nowrap><font size=2><a name="MM\example_basic_comms_coordinator_sapi\TXByte"><b>TXByte</b></a>
+</font>
+  <td><font size=2>0200 </font>
+  <td align=center><font size=2>-</font>
+<tr valign=top>
+  <td rowspan=2 ><font size=2><b><a name="MM\example_basic_comms_coordinator_sapi\Segpart_26"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8864 - 8897<br>Segment part 26.</font>
+  <td><font size=2>  <i><font size=2>Intra module refs</font>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_27">main</a>
+<tr valign=top>
+  <td nowrap><font size=2><a name="MM\example_basic_comms_coordinator_sapi\ConfigureTimerUart"><b>ConfigureTimerUart</b></a>
+<br>               calls direct
+<br>               CSTACK = 00000000 ( 00000002 )
+</font>
+  <td><font size=2>8864 </font>
+  <td align=center><font size=2>-</font>
+<tr valign=top>
+  <td rowspan=2 ><font size=2><b><a name="MM\example_basic_comms_coordinator_sapi\Segpart_25"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 878C - 87C3<br>Segment part 25.</font>
+  <td><font size=2>  <i><font size=2>Intra module refs</font>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_26">ConfigureTimerUart</a>
+<tr valign=top>
+  <td nowrap><font size=2><a name="MM\example_basic_comms_coordinator_sapi\Transmit"><b>Transmit</b></a>
+<br>               CSTACK = 00000000 ( 00000002 )
+</font>
+  <td><font size=2>878C </font>
+  <td align=center><font size=2>-</font>
+<tr valign=top>
+  <td rowspan=2 ><font size=2><b><a name="MM\example_basic_comms_coordinator_sapi\Segpart_28"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 871A - 8753<br>Segment part 28.</font>
+  <td><font size=2>  <i><font size=2>Intra module refs</font>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_7">Timer_A::??INTVEC 18</a>
+<tr valign=top>
+  <td nowrap><font size=2><a name="MM\example_basic_comms_coordinator_sapi\Timer_A"><b>Timer_A</b></a>
+<br>               interrupt function
+<br>               CSTACK = 00000000 ( 00000004 )
+</font>
+  <td><font size=2>871A </font>
+  <td align=center><font size=2>-</font>
+<tr valign=top>
+  <td rowspan=1 ><font size=2><b><a name="MM\example_basic_comms_coordinator_sapi\Segpart_27"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 83A0 - 8455<br>Segment part 27.</font>
   <td nowrap><font size=2><a name="MM\example_basic_comms_coordinator_sapi\main"><b>main</b></a>
 <br>               calls direct
 <br>               CSTACK = 00000000 ( 00000002 )
 </font>
-  <td><font size=2>8398 </font>
+  <td><font size=2>83A0 </font>
   <td><font size=2><a href="#MM\?cstart\Segpart_14">Segment part 14 (?cstart)</a>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\example_basic_comms_coordinator_sapi\Segpart_2"><b>DATA16_C</b></a></b><br>Relative segment<br> 8000 - 8038<br>Segment part 2.</font>
-  <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_15">main</a>
+  <td rowspan=1 ><font size=2><b><a name="MM\example_basic_comms_coordinator_sapi\Segpart_7"><b>INTVEC</b></a></b><br>Common segment<br> FFE0 - FFF3<br>Segment part 7. ROOT.</font>
+  <td nowrap><font size=2><a name="MM\example_basic_comms_coordinator_sapi\Timer_A::??INTVEC 18"><b>Timer_A::??INTVEC 18</b></a>
+</font>
+  <td><font size=2>FFF2 </font>
+  <td align=center><font size=2>-</font>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\example_basic_comms_coordinator_sapi\Segpart_3"><b>DATA16_C</b></a></b><br>Relative segment<br> 8039 - 807A<br>Segment part 3.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\example_basic_comms_coordinator_sapi\Segpart_9"><b>DATA16_C</b></a></b><br>Relative segment<br> 8000 - 8038<br>Segment part 9.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_15">main</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_27">main</a>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\example_basic_comms_coordinator_sapi\Segpart_4"><b>DATA16_C</b></a></b><br>Relative segment<br> 807B - 8091<br>Segment part 4.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\example_basic_comms_coordinator_sapi\Segpart_10"><b>DATA16_C</b></a></b><br>Relative segment<br> 8039 - 807A<br>Segment part 10.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_15">main</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_27">main</a>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\example_basic_comms_coordinator_sapi\Segpart_5"><b>DATA16_C</b></a></b><br>Relative segment<br> 8092 - 80AA<br>Segment part 5.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\example_basic_comms_coordinator_sapi\Segpart_11"><b>DATA16_C</b></a></b><br>Relative segment<br> 807B - 8091<br>Segment part 11.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_15">main</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_27">main</a>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\example_basic_comms_coordinator_sapi\Segpart_6"><b>DATA16_C</b></a></b><br>Relative segment<br> 80AB - 80BA<br>Segment part 6.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\example_basic_comms_coordinator_sapi\Segpart_12"><b>DATA16_C</b></a></b><br>Relative segment<br> 8092 - 80AA<br>Segment part 12.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_15">main</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_27">main</a>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\example_basic_comms_coordinator_sapi\Segpart_7"><b>DATA16_C</b></a></b><br>Relative segment<br> 80BB - 80D7<br>Segment part 7.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\example_basic_comms_coordinator_sapi\Segpart_13"><b>DATA16_C</b></a></b><br>Relative segment<br> 80AB - 80BA<br>Segment part 13.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_15">main</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_27">main</a>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\example_basic_comms_coordinator_sapi\Segpart_8"><b>DATA16_C</b></a></b><br>Relative segment<br> 80D8 - 80EC<br>Segment part 8.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\example_basic_comms_coordinator_sapi\Segpart_14"><b>DATA16_C</b></a></b><br>Relative segment<br> 80BB - 80D7<br>Segment part 14.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_15">main</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_27">main</a>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\example_basic_comms_coordinator_sapi\Segpart_9"><b>DATA16_C</b></a></b><br>Relative segment<br> 80ED - 80FB<br>Segment part 9.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\example_basic_comms_coordinator_sapi\Segpart_15"><b>DATA16_C</b></a></b><br>Relative segment<br> 80D8 - 80EC<br>Segment part 15.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_15">main</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_27">main</a>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\example_basic_comms_coordinator_sapi\Segpart_10"><b>DATA16_C</b></a></b><br>Relative segment<br> 80FC - 8115<br>Segment part 10.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\example_basic_comms_coordinator_sapi\Segpart_16"><b>DATA16_C</b></a></b><br>Relative segment<br> 80ED - 80FB<br>Segment part 16.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_15">main</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_27">main</a>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\example_basic_comms_coordinator_sapi\Segpart_11"><b>DATA16_C</b></a></b><br>Relative segment<br> 8116 - 8130<br>Segment part 11.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\example_basic_comms_coordinator_sapi\Segpart_17"><b>DATA16_C</b></a></b><br>Relative segment<br> 80FC - 8115<br>Segment part 17.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_15">main</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_27">main</a>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\example_basic_comms_coordinator_sapi\Segpart_12"><b>DATA16_C</b></a></b><br>Relative segment<br> 8131 - 813E<br>Segment part 12.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\example_basic_comms_coordinator_sapi\Segpart_18"><b>DATA16_C</b></a></b><br>Relative segment<br> 8116 - 8130<br>Segment part 18.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_15">main</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_27">main</a>
 <tr valign=top>
-  <td rowspan=122 ><font size=2><b>C:\Users\Baek\IAR workspace\sd_mobile_app\ZNP Examples\IAR\Debug\Obj\hal_cc2530znp_target_board.r43</b></font>
-  <td rowspan=122><font size=2><a name="MM\hal_cc2530znp_target_board"><b>hal_cc2530znp_target_board</b></a><br>Program module</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\example_basic_comms_coordinator_sapi\Segpart_19"><b>DATA16_C</b></a></b><br>Relative segment<br> 8131 - 813E<br>Segment part 19.</font>
+  <td><font size=2>  <i><font size=2>Intra module refs</font>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_27">main</a>
+<tr valign=top>
+  <td rowspan=104 ><font size=2><b>C:\Users\Baek\IAR workspace\sd_mobile_app\ZNP Examples\IAR\Debug\Obj\hal_cc2530znp_target_board.r43</b></font>
+  <td rowspan=104><font size=2><a name="MM\hal_cc2530znp_target_board"><b>hal_cc2530znp_target_board</b></a><br>Program module</font>
   <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_1"><b>DATA16_AN</b></a></b><br>Relative segment<br> 0001 - 0001<br>Segment part 1. ROOT.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_85">halInit</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_81">halInit</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\IE2"><b>IE2</b></a>
 </font>
@@ -239,9 +358,8 @@ __program_start
 <tr valign=top>
   <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_2"><b>DATA16_AN</b></a></b><br>Relative segment<br> 0003 - 0003<br>Segment part 2. ROOT.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_88">USCIAB0RX_ISR</a>
-<br><a href="#MM\hal_cc2530znp_target_board\Segpart_83">putchar</a>
-<br><a href="#MM\hal_cc2530znp_target_board\Segpart_81">spiWrite</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_79">putchar</a>
+<br><a href="#MM\hal_cc2530znp_target_board\Segpart_77">spiWrite</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\IFG2"><b>IFG2</b></a>
 </font>
@@ -274,7 +392,7 @@ __program_start
 <tr valign=top>
   <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_7"><b>DATA16_AN</b></a></b><br>Relative segment<br> 0056 - 0056<br>Segment part 7. ROOT.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_85">halInit</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_81">halInit</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\DCOCTL"><b>DCOCTL</b></a>
 </font>
@@ -283,7 +401,7 @@ __program_start
 <tr valign=top>
   <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_8"><b>DATA16_AN</b></a></b><br>Relative segment<br> 0057 - 0057<br>Segment part 8. ROOT.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_85">halInit</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_81">halInit</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\BCSCTL1"><b>BCSCTL1</b></a>
 </font>
@@ -292,7 +410,7 @@ __program_start
 <tr valign=top>
   <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_9"><b>DATA16_AN</b></a></b><br>Relative segment<br> 0058 - 0058<br>Segment part 9. ROOT.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_85">halInit</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_81">halInit</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\BCSCTL2"><b>BCSCTL2</b></a>
 </font>
@@ -301,7 +419,7 @@ __program_start
 <tr valign=top>
   <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_10"><b>DATA16_AN</b></a></b><br>Relative segment<br> 0053 - 0053<br>Segment part 10. ROOT.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_85">halInit</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_81">halInit</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\BCSCTL3"><b>BCSCTL3</b></a>
 </font>
@@ -310,9 +428,9 @@ __program_start
 <tr valign=top>
   <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_11"><b>DATA16_AN</b></a></b><br>Relative segment<br> 0021 - 0021<br>Segment part 11. ROOT.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_78">clearLeds</a>
-<br><a href="#MM\hal_cc2530znp_target_board\Segpart_85">halInit</a>
-<br><a href="#MM\hal_cc2530znp_target_board\Segpart_79">setLed</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_74">clearLeds</a>
+<br><a href="#MM\hal_cc2530znp_target_board\Segpart_81">halInit</a>
+<br><a href="#MM\hal_cc2530znp_target_board\Segpart_75">setLed</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\P1OUT"><b>P1OUT</b></a>
 </font>
@@ -321,7 +439,7 @@ __program_start
 <tr valign=top>
   <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_12"><b>DATA16_AN</b></a></b><br>Relative segment<br> 0022 - 0022<br>Segment part 12. ROOT.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_85">halInit</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_81">halInit</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\P1DIR"><b>P1DIR</b></a>
 </font>
@@ -330,8 +448,8 @@ __program_start
 <tr valign=top>
   <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_13"><b>DATA16_AN</b></a></b><br>Relative segment<br> 0023 - 0023<br>Segment part 13. ROOT.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_87">PORT1_ISR</a>
-<br><a href="#MM\hal_cc2530znp_target_board\Segpart_85">halInit</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_83">PORT1_ISR</a>
+<br><a href="#MM\hal_cc2530znp_target_board\Segpart_81">halInit</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\P1IFG"><b>P1IFG</b></a>
 </font>
@@ -340,7 +458,7 @@ __program_start
 <tr valign=top>
   <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_14"><b>DATA16_AN</b></a></b><br>Relative segment<br> 0024 - 0024<br>Segment part 14. ROOT.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_85">halInit</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_81">halInit</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\P1IES"><b>P1IES</b></a>
 </font>
@@ -349,7 +467,7 @@ __program_start
 <tr valign=top>
   <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_15"><b>DATA16_AN</b></a></b><br>Relative segment<br> 0025 - 0025<br>Segment part 15. ROOT.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_85">halInit</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_81">halInit</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\P1IE"><b>P1IE</b></a>
 </font>
@@ -358,7 +476,7 @@ __program_start
 <tr valign=top>
   <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_16"><b>DATA16_AN</b></a></b><br>Relative segment<br> 0026 - 0026<br>Segment part 16. ROOT.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_85">halInit</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_81">halInit</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\P1SEL"><b>P1SEL</b></a>
 </font>
@@ -367,7 +485,7 @@ __program_start
 <tr valign=top>
   <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_17"><b>DATA16_AN</b></a></b><br>Relative segment<br> 0027 - 0027<br>Segment part 17. ROOT.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_85">halInit</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_81">halInit</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\P1REN"><b>P1REN</b></a>
 </font>
@@ -376,25 +494,16 @@ __program_start
 <tr valign=top>
   <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_18"><b>DATA16_AN</b></a></b><br>Relative segment<br> 0029 - 0029<br>Segment part 18. ROOT.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_85">halInit</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_81">halInit</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\P2OUT"><b>P2OUT</b></a>
 </font>
   <td><font size=2>0029 </font>
   <td align=center><font size=2>-</font>
 <tr valign=top>
-  <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_19"><b>DATA16_AN</b></a></b><br>Relative segment<br> 002A - 002A<br>Segment part 19. ROOT.</font>
-  <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_85">halInit</a>
-<tr valign=top>
-  <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\P2DIR"><b>P2DIR</b></a>
-</font>
-  <td><font size=2>002A </font>
-  <td align=center><font size=2>-</font>
-<tr valign=top>
   <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_20"><b>DATA16_AN</b></a></b><br>Relative segment<br> 002B - 002B<br>Segment part 20. ROOT.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_86">PORT2_ISR</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_82">PORT2_ISR</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\P2IFG"><b>P2IFG</b></a>
 </font>
@@ -413,15 +522,6 @@ __program_start
   <td><font size=2>002D </font>
   <td align=center><font size=2>-</font>
 <tr valign=top>
-  <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_23"><b>DATA16_AN</b></a></b><br>Relative segment<br> 002E - 002E<br>Segment part 23. ROOT.</font>
-  <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_85">halInit</a>
-<tr valign=top>
-  <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\P2SEL"><b>P2SEL</b></a>
-</font>
-  <td><font size=2>002E </font>
-  <td align=center><font size=2>-</font>
-<tr valign=top>
   <td rowspan=1 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_24"><b>DATA16_AN</b></a></b><br>Relative segment<br> 002F - 002F<br>Segment part 24. ROOT.</font>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\P2REN"><b>P2REN</b></a>
 </font>
@@ -430,7 +530,7 @@ __program_start
 <tr valign=top>
   <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_25"><b>DATA16_AN</b></a></b><br>Relative segment<br> 0019 - 0019<br>Segment part 25. ROOT.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_85">halInit</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_81">halInit</a>
 <br><a href="#MM\znp_interface_spi\Segpart_5">sendSreq (znp_interface_spi)</a>
 <br><a href="#MM\znp_interface\Segpart_77">znpReset (znp_interface)</a>
 <tr valign=top>
@@ -441,7 +541,7 @@ __program_start
 <tr valign=top>
   <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_26"><b>DATA16_AN</b></a></b><br>Relative segment<br> 001A - 001A<br>Segment part 26. ROOT.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_85">halInit</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_81">halInit</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\P3DIR"><b>P3DIR</b></a>
 </font>
@@ -450,7 +550,7 @@ __program_start
 <tr valign=top>
   <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_27"><b>DATA16_AN</b></a></b><br>Relative segment<br> 001B - 001B<br>Segment part 27. ROOT.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_85">halInit</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_81">halInit</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\P3SEL"><b>P3SEL</b></a>
 </font>
@@ -459,7 +559,7 @@ __program_start
 <tr valign=top>
   <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_28"><b>DATA16_AN</b></a></b><br>Relative segment<br> 001D - 001D<br>Segment part 28. ROOT.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_85">halInit</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_81">halInit</a>
 <br><a href="#MM\znp_interface\Segpart_77">znpReset (znp_interface)</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\P4OUT"><b>P4OUT</b></a>
@@ -469,7 +569,7 @@ __program_start
 <tr valign=top>
   <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_29"><b>DATA16_AN</b></a></b><br>Relative segment<br> 001E - 001E<br>Segment part 29. ROOT.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_85">halInit</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_81">halInit</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\P4DIR"><b>P4DIR</b></a>
 </font>
@@ -478,7 +578,7 @@ __program_start
 <tr valign=top>
   <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_30"><b>DATA16_AN</b></a></b><br>Relative segment<br> 001F - 001F<br>Segment part 30. ROOT.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_85">halInit</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_81">halInit</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\P4SEL"><b>P4SEL</b></a>
 </font>
@@ -491,31 +591,10 @@ __program_start
   <td><font size=2>0011 </font>
   <td align=center><font size=2>-</font>
 <tr valign=top>
-  <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_32"><b>DATA16_AN</b></a></b><br>Relative segment<br> 0160 - 0161<br>Segment part 32. ROOT.</font>
-  <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_85">halInit</a>
-<tr valign=top>
-  <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\TACTL"><b>TACTL</b></a>
-</font>
-  <td><font size=2>0160 </font>
-  <td align=center><font size=2>-</font>
-<tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_33"><b>DATA16_AN</b></a></b><br>Relative segment<br> 0162 - 0163<br>Segment part 33. ROOT.</font>
-  <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\TACCTL0"><b>TACCTL0</b></a>
-</font>
-  <td><font size=2>0162 </font>
-  <td align=center><font size=2>-</font>
-<tr valign=top>
   <td rowspan=1 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_34"><b>DATA16_AN</b></a></b><br>Relative segment<br> 0166 - 0167<br>Segment part 34. ROOT.</font>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\TACCTL2"><b>TACCTL2</b></a>
 </font>
   <td><font size=2>0166 </font>
-  <td align=center><font size=2>-</font>
-<tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_35"><b>DATA16_AN</b></a></b><br>Relative segment<br> 0172 - 0173<br>Segment part 35. ROOT.</font>
-  <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\TACCR0"><b>TACCR0</b></a>
-</font>
-  <td><font size=2>0172 </font>
   <td align=center><font size=2>-</font>
 <tr valign=top>
   <td rowspan=1 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_36"><b>DATA16_AN</b></a></b><br>Relative segment<br> 0176 - 0177<br>Segment part 36. ROOT.</font>
@@ -524,54 +603,54 @@ __program_start
   <td><font size=2>0176 </font>
   <td align=center><font size=2>-</font>
 <tr valign=top>
-  <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_37"><b>DATA16_AN</b></a></b><br>Relative segment<br> 0061 - 0061<br>Segment part 37. ROOT.</font>
+  <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_37"><b>DATA16_AN</b></a></b><br>Relative segment<br> 0060 - 0060<br>Segment part 37. ROOT.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_85">halInit</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_81">halInit</a>
+<tr valign=top>
+  <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\UCA0CTL0"><b>UCA0CTL0</b></a>
+</font>
+  <td><font size=2>0060 </font>
+  <td align=center><font size=2>-</font>
+<tr valign=top>
+  <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_38"><b>DATA16_AN</b></a></b><br>Relative segment<br> 0061 - 0061<br>Segment part 38. ROOT.</font>
+  <td><font size=2>  <i><font size=2>Intra module refs</font>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_81">halInit</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\UCA0CTL1"><b>UCA0CTL1</b></a>
 </font>
   <td><font size=2>0061 </font>
   <td align=center><font size=2>-</font>
 <tr valign=top>
-  <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_38"><b>DATA16_AN</b></a></b><br>Relative segment<br> 0062 - 0062<br>Segment part 38. ROOT.</font>
+  <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_39"><b>DATA16_AN</b></a></b><br>Relative segment<br> 0062 - 0062<br>Segment part 39. ROOT.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_85">halInit</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_81">halInit</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\UCA0BR0"><b>UCA0BR0</b></a>
 </font>
   <td><font size=2>0062 </font>
   <td align=center><font size=2>-</font>
 <tr valign=top>
-  <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_39"><b>DATA16_AN</b></a></b><br>Relative segment<br> 0063 - 0063<br>Segment part 39. ROOT.</font>
+  <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_40"><b>DATA16_AN</b></a></b><br>Relative segment<br> 0063 - 0063<br>Segment part 40. ROOT.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_85">halInit</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_81">halInit</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\UCA0BR1"><b>UCA0BR1</b></a>
 </font>
   <td><font size=2>0063 </font>
   <td align=center><font size=2>-</font>
 <tr valign=top>
-  <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_40"><b>DATA16_AN</b></a></b><br>Relative segment<br> 0064 - 0064<br>Segment part 40. ROOT.</font>
+  <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_41"><b>DATA16_AN</b></a></b><br>Relative segment<br> 0064 - 0064<br>Segment part 41. ROOT.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_85">halInit</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_81">halInit</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\UCA0MCTL"><b>UCA0MCTL</b></a>
 </font>
   <td><font size=2>0064 </font>
   <td align=center><font size=2>-</font>
 <tr valign=top>
-  <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_41"><b>DATA16_AN</b></a></b><br>Relative segment<br> 0066 - 0066<br>Segment part 41. ROOT.</font>
-  <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_88">USCIAB0RX_ISR</a>
-<tr valign=top>
-  <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\UCA0RXBUF"><b>UCA0RXBUF</b></a>
-</font>
-  <td><font size=2>0066 </font>
-  <td align=center><font size=2>-</font>
-<tr valign=top>
   <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_42"><b>DATA16_AN</b></a></b><br>Relative segment<br> 0067 - 0067<br>Segment part 42. ROOT.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_83">putchar</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_79">putchar</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\UCA0TXBUF"><b>UCA0TXBUF</b></a>
 </font>
@@ -580,7 +659,7 @@ __program_start
 <tr valign=top>
   <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_43"><b>DATA16_AN</b></a></b><br>Relative segment<br> 0068 - 0068<br>Segment part 43. ROOT.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_82">halSpiInitZnp</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_78">halSpiInitZnp</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\UCB0CTL0"><b>UCB0CTL0</b></a>
 </font>
@@ -589,7 +668,7 @@ __program_start
 <tr valign=top>
   <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_44"><b>DATA16_AN</b></a></b><br>Relative segment<br> 0069 - 0069<br>Segment part 44. ROOT.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_82">halSpiInitZnp</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_78">halSpiInitZnp</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\UCB0CTL1"><b>UCB0CTL1</b></a>
 </font>
@@ -598,7 +677,7 @@ __program_start
 <tr valign=top>
   <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_45"><b>DATA16_AN</b></a></b><br>Relative segment<br> 006A - 006A<br>Segment part 45. ROOT.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_82">halSpiInitZnp</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_78">halSpiInitZnp</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\UCB0BR0"><b>UCB0BR0</b></a>
 </font>
@@ -607,7 +686,7 @@ __program_start
 <tr valign=top>
   <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_46"><b>DATA16_AN</b></a></b><br>Relative segment<br> 006B - 006B<br>Segment part 46. ROOT.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_82">halSpiInitZnp</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_78">halSpiInitZnp</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\UCB0BR1"><b>UCB0BR1</b></a>
 </font>
@@ -616,7 +695,7 @@ __program_start
 <tr valign=top>
   <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_47"><b>DATA16_AN</b></a></b><br>Relative segment<br> 006E - 006E<br>Segment part 47. ROOT.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_81">spiWrite</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_77">spiWrite</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\UCB0RXBUF"><b>UCB0RXBUF</b></a>
 </font>
@@ -625,7 +704,7 @@ __program_start
 <tr valign=top>
   <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_48"><b>DATA16_AN</b></a></b><br>Relative segment<br> 006F - 006F<br>Segment part 48. ROOT.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_81">spiWrite</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_77">spiWrite</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\UCB0TXBUF"><b>UCB0TXBUF</b></a>
 </font>
@@ -634,7 +713,7 @@ __program_start
 <tr valign=top>
   <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_49"><b>DATA16_AN</b></a></b><br>Relative segment<br> 0120 - 0121<br>Segment part 49. ROOT.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_85">halInit</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_81">halInit</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\WDTCTL"><b>WDTCTL</b></a>
 </font>
@@ -643,7 +722,7 @@ __program_start
 <tr valign=top>
   <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_50"><b>DATA16_AN</b></a></b><br>Relative segment<br> 10FC - 10FC<br>Segment part 50. ROOT.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_85">halInit</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_81">halInit</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\CALDCO_8MHZ"><b>CALDCO_8MHZ</b></a>
 </font>
@@ -652,82 +731,51 @@ __program_start
 <tr valign=top>
   <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_51"><b>DATA16_AN</b></a></b><br>Relative segment<br> 10FD - 10FD<br>Segment part 51. ROOT.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_85">halInit</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_81">halInit</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\CALBC1_8MHZ"><b>CALBC1_8MHZ</b></a>
 </font>
   <td><font size=2>10FD </font>
   <td align=center><font size=2>-</font>
 <tr valign=top>
-  <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_58"><b>DATA16_Z</b></a></b><br>Relative segment<br> 0200 - 0201<br>Segment part 58.</font>
+  <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_56"><b>DATA16_Z</b></a></b><br>Relative segment<br> 0202 - 0203<br>Segment part 56.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_88">USCIAB0RX_ISR</a>
-<tr valign=top>
-  <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\debugConsoleIsr"><b>debugConsoleIsr</b></a>
-</font>
-  <td><font size=2>0200 </font>
-  <td align=center><font size=2>-</font>
-<tr valign=top>
-  <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_59"><b>DATA16_Z</b></a></b><br>Relative segment<br> 0202 - 0203<br>Segment part 59.</font>
-  <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_87">PORT1_ISR</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_83">PORT1_ISR</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\buttonIsr"><b>buttonIsr</b></a>
 </font>
   <td><font size=2>0202 </font>
   <td align=center><font size=2>-</font>
 <tr valign=top>
-  <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_60"><b>DATA16_Z</b></a></b><br>Relative segment<br> 0204 - 0205<br>Segment part 60.</font>
+  <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_58"><b>DATA16_Z</b></a></b><br>Relative segment<br> 0204 - 0205<br>Segment part 58.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_67">Timer_A</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_83">PORT1_ISR</a>
 <tr valign=top>
-  <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\timerIsr"><b>timerIsr</b></a>
+  <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\accelerometerIsr"><b>accelerometerIsr</b></a>
 </font>
   <td><font size=2>0204 </font>
   <td align=center><font size=2>-</font>
 <tr valign=top>
-  <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_61"><b>DATA16_Z</b></a></b><br>Relative segment<br> 0206 - 0207<br>Segment part 61.</font>
+  <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_59"><b>DATA16_Z</b></a></b><br>Relative segment<br> 0206 - 0207<br>Segment part 59.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_87">PORT1_ISR</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_82">PORT2_ISR</a>
 <tr valign=top>
-  <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\accelerometerIsr"><b>accelerometerIsr</b></a>
+  <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\srdyIsr"><b>srdyIsr</b></a>
 </font>
   <td><font size=2>0206 </font>
   <td align=center><font size=2>-</font>
 <tr valign=top>
-  <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_62"><b>DATA16_Z</b></a></b><br>Relative segment<br> 0208 - 0209<br>Segment part 62.</font>
+  <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_60"><b>DATA16_Z</b></a></b><br>Relative segment<br> 0208 - 0209<br>Segment part 60.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_86">PORT2_ISR</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_83">PORT1_ISR</a>
+<br><a href="#MM\hal_cc2530znp_target_board\Segpart_82">PORT2_ISR</a>
 <tr valign=top>
-  <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\srdyIsr"><b>srdyIsr</b></a>
+  <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\wakeupFlags"><b>wakeupFlags</b></a>
 </font>
   <td><font size=2>0208 </font>
   <td align=center><font size=2>-</font>
 <tr valign=top>
-  <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_63"><b>DATA16_Z</b></a></b><br>Relative segment<br> 020A - 020B<br>Segment part 63.</font>
-  <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_87">PORT1_ISR</a>
-<br><a href="#MM\hal_cc2530znp_target_board\Segpart_86">PORT2_ISR</a>
-<br><a href="#MM\hal_cc2530znp_target_board\Segpart_67">Timer_A</a>
-<tr valign=top>
-  <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\wakeupFlags"><b>wakeupFlags</b></a>
-</font>
-  <td><font size=2>020A </font>
-  <td align=center><font size=2>-</font>
-<tr valign=top>
-  <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_88"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8936 - 8955<br>Segment part 88.</font>
-  <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_54">USCIAB0RX_ISR::??INTVEC 14</a>
-<tr valign=top>
-  <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\USCIAB0RX_ISR"><b>USCIAB0RX_ISR</b></a>
-<br>               interrupt function
-<br>               calls indirect
-<br>               CSTACK = 00000000 ( 0000000C )
-</font>
-  <td><font size=2>8936 </font>
-  <td align=center><font size=2>-</font>
-<tr valign=top>
-  <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_87"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 87CC - 8801<br>Segment part 87.</font>
+  <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_83"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 87C4 - 87F9<br>Segment part 83.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
   <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_52">PORT1_ISR::??INTVEC 4</a>
 <tr valign=top>
@@ -736,10 +784,10 @@ __program_start
 <br>               calls indirect
 <br>               CSTACK = 00000000 ( 0000000C )
 </font>
-  <td><font size=2>87CC </font>
+  <td><font size=2>87C4 </font>
   <td align=center><font size=2>-</font>
 <tr valign=top>
-  <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_86"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8866 - 8893<br>Segment part 86.</font>
+  <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_82"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 88FA - 8927<br>Segment part 82.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
   <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_53">PORT2_ISR::??INTVEC 6</a>
 <tr valign=top>
@@ -748,72 +796,60 @@ __program_start
 <br>               calls indirect
 <br>               CSTACK = 00000000 ( 0000000C )
 </font>
-  <td><font size=2>8866 </font>
+  <td><font size=2>88FA </font>
   <td align=center><font size=2>-</font>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_85"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 844A - 84F3<br>Segment part 85.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_81"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8456 - 8507<br>Segment part 81.</font>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\halInit"><b>halInit</b></a>
 <br>               calls direct
 <br>               CSTACK = 00000000 ( 00000002 )
 </font>
-  <td><font size=2>844A </font>
-  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_15">main (example_basic_comms_coordinator_sapi)</a>
+  <td><font size=2>8456 </font>
+  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_27">main (example_basic_comms_coordinator_sapi)</a>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_83"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8A5E - 8A69<br>Segment part 83.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_79"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8A90 - 8A9B<br>Segment part 79.</font>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\putchar"><b>putchar</b></a>
 <br>               CSTACK = 00000000 ( 00000002 )
 </font>
-  <td><font size=2>8A5E </font>
+  <td><font size=2>8A90 </font>
   <td><font size=2><a href="#MM\printf\Segpart_10">tfp_printf (printf)</a>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_82"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 89C8 - 89E1<br>Segment part 82.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_78"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 89E0 - 89F9<br>Segment part 78.</font>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\halSpiInitZnp"><b>halSpiInitZnp</b></a>
 <br>               CSTACK = 00000000 ( 00000002 )
 </font>
-  <td><font size=2>89C8 </font>
+  <td><font size=2>89E0 </font>
   <td><font size=2><a href="#MM\znp_interface\Segpart_78">znpInit (znp_interface)</a>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_81"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8956 - 8973<br>Segment part 81.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_77"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 89A2 - 89C1<br>Segment part 77.</font>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\spiWrite"><b>spiWrite</b></a>
 <br>               CSTACK = 00000000 ( 00000002 )
 </font>
-  <td><font size=2>8956 </font>
+  <td><font size=2>89A2 </font>
   <td><font size=2><a href="#MM\znp_interface_spi\Segpart_5">sendSreq (znp_interface_spi)</a>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_65"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 89E2 - 89F9<br>Segment part 65.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_62"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8A14 - 8A2B<br>Segment part 62.</font>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\delayMs"><b>delayMs</b></a>
 <br>               CSTACK = 00000000 ( 00000002 )
 </font>
-  <td><font size=2>89E2 </font>
+  <td><font size=2>8A14 </font>
   <td><font size=2><a href="#MM\znp_interface\Segpart_77">znpReset (znp_interface)</a>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_79"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 89AE - 89C7<br>Segment part 79.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_75"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 89FA - 8A13<br>Segment part 75.</font>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\setLed"><b>setLed</b></a>
 <br>               CSTACK = 00000000 ( 00000002 )
 </font>
-  <td><font size=2>89AE </font>
-  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_15">main (example_basic_comms_coordinator_sapi)</a>
+  <td><font size=2>89FA </font>
+  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_27">main (example_basic_comms_coordinator_sapi)</a>
 <tr valign=top>
-  <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_78"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8A6A - 8A71<br>Segment part 78.</font>
+  <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_74"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8AA4 - 8AAB<br>Segment part 74.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_85">halInit</a>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_81">halInit</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\clearLeds"><b>clearLeds</b></a>
 <br>               CSTACK = 00000000 ( 00000002 )
 </font>
-  <td><font size=2>8A6A </font>
-  <td align=center><font size=2>-</font>
-<tr valign=top>
-  <td rowspan=2 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_67"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8914 - 8935<br>Segment part 67.</font>
-  <td><font size=2>  <i><font size=2>Intra module refs</font>
-  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_55">Timer_A::??INTVEC 18</a>
-<tr valign=top>
-  <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\Timer_A"><b>Timer_A</b></a>
-<br>               interrupt function
-<br>               calls indirect
-<br>               CSTACK = 00000000 ( 0000000C )
-</font>
-  <td><font size=2>8914 </font>
+  <td><font size=2>8AA4 </font>
   <td align=center><font size=2>-</font>
 <tr valign=top>
   <td rowspan=1 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_52"><b>INTVEC</b></a></b><br>Common segment<br> FFE0 - FFE5<br>Segment part 52. ROOT.</font>
@@ -828,56 +864,44 @@ __program_start
   <td><font size=2>FFE6 </font>
   <td align=center><font size=2>-</font>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_54"><b>INTVEC</b></a></b><br>Common segment<br> FFE0 - FFEF<br>Segment part 54. ROOT.</font>
-  <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\USCIAB0RX_ISR::??INTVEC 14"><b>USCIAB0RX_ISR::??INTVEC 14</b></a>
-</font>
-  <td><font size=2>FFEE </font>
-  <td align=center><font size=2>-</font>
-<tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\hal_cc2530znp_target_board\Segpart_55"><b>INTVEC</b></a></b><br>Common segment<br> FFE0 - FFF3<br>Segment part 55. ROOT.</font>
-  <td nowrap><font size=2><a name="MM\hal_cc2530znp_target_board\Timer_A::??INTVEC 18"><b>Timer_A::??INTVEC 18</b></a>
-</font>
-  <td><font size=2>FFF2 </font>
-  <td align=center><font size=2>-</font>
-<tr valign=top>
   <td rowspan=17 ><font size=2><b>C:\Users\Baek\IAR workspace\sd_mobile_app\ZNP Examples\IAR\Debug\Obj\printf.r43</b></font>
   <td rowspan=17><font size=2><a name="MM\printf"><b>printf</b></a><br>Program module</font>
-  <td rowspan=2 ><font size=2><b><a name="MM\printf\Segpart_2"><b>DATA16_Z</b></a></b><br>Relative segment<br> 020C - 020D<br>Segment part 2.</font>
+  <td rowspan=2 ><font size=2><b><a name="MM\printf\Segpart_2"><b>DATA16_Z</b></a></b><br>Relative segment<br> 020A - 020B<br>Segment part 2.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
   <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\printf\Segpart_7">out</a>
 <br><a href="#MM\printf\Segpart_10">tfp_printf</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\printf\bf"><b>bf</b></a>
 </font>
-  <td><font size=2>020C </font>
+  <td><font size=2>020A </font>
 <tr valign=top>
-  <td rowspan=2 ><font size=2><b><a name="MM\printf\Segpart_3"><b>DATA16_Z</b></a></b><br>Relative segment<br> 0212 - 021D<br>Segment part 3.</font>
+  <td rowspan=2 ><font size=2><b><a name="MM\printf\Segpart_3"><b>DATA16_Z</b></a></b><br>Relative segment<br> 0211 - 021C<br>Segment part 3.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
   <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\printf\Segpart_10">tfp_printf</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\printf\buf"><b>buf</b></a>
 </font>
-  <td><font size=2>0212 </font>
+  <td><font size=2>0211 </font>
 <tr valign=top>
-  <td rowspan=2 ><font size=2><b><a name="MM\printf\Segpart_4"><b>DATA16_Z</b></a></b><br>Relative segment<br> 020E - 020F<br>Segment part 4.</font>
+  <td rowspan=2 ><font size=2><b><a name="MM\printf\Segpart_4"><b>DATA16_Z</b></a></b><br>Relative segment<br> 020C - 020D<br>Segment part 4.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
   <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\printf\Segpart_9">divOut</a>
 <br><a href="#MM\printf\Segpart_10">tfp_printf</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\printf\num"><b>num</b></a>
 </font>
-  <td><font size=2>020E </font>
+  <td><font size=2>020C </font>
 <tr valign=top>
-  <td rowspan=2 ><font size=2><b><a name="MM\printf\Segpart_5"><b>DATA16_Z</b></a></b><br>Relative segment<br> 021E - 021E<br>Segment part 5.</font>
+  <td rowspan=2 ><font size=2><b><a name="MM\printf\Segpart_5"><b>DATA16_Z</b></a></b><br>Relative segment<br> 021D - 021D<br>Segment part 5.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
   <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\printf\Segpart_8">outDgt</a>
 <br><a href="#MM\printf\Segpart_10">tfp_printf</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\printf\uc"><b>uc</b></a>
 </font>
-  <td><font size=2>021E </font>
+  <td><font size=2>021D </font>
 <tr valign=top>
-  <td rowspan=2 ><font size=2><b><a name="MM\printf\Segpart_6"><b>DATA16_Z</b></a></b><br>Relative segment<br> 021F - 021F<br>Segment part 6.</font>
+  <td rowspan=2 ><font size=2><b><a name="MM\printf\Segpart_6"><b>DATA16_Z</b></a></b><br>Relative segment<br> 021E - 021E<br>Segment part 6.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
   <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\printf\Segpart_9">divOut</a>
 <br><a href="#MM\printf\Segpart_8">outDgt</a>
@@ -885,9 +909,9 @@ __program_start
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\printf\zs"><b>zs</b></a>
 </font>
-  <td><font size=2>021F </font>
+  <td><font size=2>021E </font>
 <tr valign=top>
-  <td rowspan=2 ><font size=2><b><a name="MM\printf\Segpart_7"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8A50 - 8A5D<br>Segment part 7.</font>
+  <td rowspan=2 ><font size=2><b><a name="MM\printf\Segpart_7"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8A82 - 8A8F<br>Segment part 7.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
   <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\printf\Segpart_8">outDgt</a>
 <br><a href="#MM\printf\Segpart_10">tfp_printf</a>
@@ -895,9 +919,9 @@ __program_start
   <td nowrap><font size=2><a name="MM\printf\out"><b>out</b></a>
 <br>               CSTACK = 00000000 ( 00000002 )
 </font>
-  <td><font size=2>8A50 </font>
+  <td><font size=2>8A82 </font>
 <tr valign=top>
-  <td rowspan=2 ><font size=2><b><a name="MM\printf\Segpart_8"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 88C0 - 88EB<br>Segment part 8.</font>
+  <td rowspan=2 ><font size=2><b><a name="MM\printf\Segpart_8"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8954 - 897F<br>Segment part 8.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
   <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\printf\Segpart_9">divOut</a>
 <br><a href="#MM\printf\Segpart_10">tfp_printf</a>
@@ -906,9 +930,9 @@ __program_start
 <br>               calls direct
 <br>               CSTACK = 00000000 ( 00000002 )
 </font>
-  <td><font size=2>88C0 </font>
+  <td><font size=2>8954 </font>
 <tr valign=top>
-  <td rowspan=2 ><font size=2><b><a name="MM\printf\Segpart_9"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 88EC - 8913<br>Segment part 9.</font>
+  <td rowspan=2 ><font size=2><b><a name="MM\printf\Segpart_9"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8980 - 89A1<br>Segment part 9.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
   <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\printf\Segpart_10">tfp_printf</a>
 <tr valign=top>
@@ -916,53 +940,58 @@ __program_start
 <br>               calls direct
 <br>               CSTACK = 00000000 ( 00000002 )
 </font>
-  <td><font size=2>88EC </font>
+  <td><font size=2>8980 </font>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\printf\Segpart_10"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 81D0 - 8397<br>Segment part 10.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\printf\Segpart_10"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 81F6 - 839F<br>Segment part 10.</font>
   <td nowrap><font size=2><a name="MM\printf\tfp_printf"><b>tfp_printf</b></a>
 <br>               calls direct
-<br>               CSTACK = 00000000 ( 0000000C )
+<br>               CSTACK = 00000000 ( 0000000E )
 </font>
-  <td><font size=2>81D0 </font>
+  <td><font size=2>81F6 </font>
   <td><font size=2><a href="#MM\znp_example_utils\Segpart_14">handleReturnValue (znp_example_utils)</a>
-<br><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_15">main (example_basic_comms_coordinator_sapi)</a>
+<br><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_27">main (example_basic_comms_coordinator_sapi)</a>
 <br><a href="#MM\znp_example_utils\Segpart_10">pollAndDisplay (znp_example_utils)</a>
 <br><a href="#MM\utilities\Segpart_9">printHexBytes (utilities)</a>
+<br><a href="#MM\simple_api\Segpart_13">sapiStartApplication (simple_api)</a>
 <br><a href="#MM\znp_interface\Segpart_53">waitForMessage (znp_interface)</a>
 <tr valign=top>
-  <td rowspan=2 ><font size=2><b>C:\Users\Baek\IAR workspace\sd_mobile_app\ZNP Examples\IAR\Debug\Obj\simple_api.r43</b></font>
-  <td rowspan=2><font size=2><a name="MM\simple_api"><b>simple_api</b></a><br>Program module</font>
-  <td rowspan=1 ><font size=2><b><a name="MM\simple_api\Segpart_6"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8650 - 869B<br>Segment part 6.</font>
+  <td rowspan=3 ><font size=2><b>C:\Users\Baek\IAR workspace\sd_mobile_app\ZNP Examples\IAR\Debug\Obj\simple_api.r43</b></font>
+  <td rowspan=3><font size=2><a name="MM\simple_api"><b>simple_api</b></a><br>Program module</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\simple_api\Segpart_14"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 863C - 8687<br>Segment part 14.</font>
   <td nowrap><font size=2><a name="MM\simple_api\sapiRegisterGenericApplication"><b>sapiRegisterGenericApplication</b></a>
 <br>               calls direct
 <br>               CSTACK = 00000000 ( 00000002 )
 </font>
-  <td><font size=2>8650 </font>
-  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_15">main (example_basic_comms_coordinator_sapi)</a>
+  <td><font size=2>863C </font>
+  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_27">main (example_basic_comms_coordinator_sapi)</a>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\simple_api\Segpart_5"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 86E2 - 8727<br>Segment part 5.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\simple_api\Segpart_13"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8688 - 86D3<br>Segment part 13.</font>
   <td nowrap><font size=2><a name="MM\simple_api\sapiStartApplication"><b>sapiStartApplication</b></a>
 <br>               calls direct
 <br>               CSTACK = 00000000 ( 00000002 )
 </font>
-  <td><font size=2>86E2 </font>
-  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_15">main (example_basic_comms_coordinator_sapi)</a>
+  <td><font size=2>8688 </font>
+  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_27">main (example_basic_comms_coordinator_sapi)</a>
+<tr valign=top>
+  <td rowspan=1 ><font size=2><b><a name="MM\simple_api\Segpart_3"><b>DATA16_C</b></a></b><br>Relative segment<br> 813F - 8163<br>Segment part 3.</font>
+  <td><font size=2>  <i><font size=2>Intra module refs</font>
+  <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\simple_api\Segpart_13">sapiStartApplication</a>
 <tr valign=top>
   <td rowspan=3 ><font size=2><b>C:\Users\Baek\IAR workspace\sd_mobile_app\ZNP Examples\IAR\Debug\Obj\utilities.r43</b></font>
   <td rowspan=3><font size=2><a name="MM\utilities"><b>utilities</b></a><br>Program module</font>
-  <td rowspan=1 ><font size=2><b><a name="MM\utilities\Segpart_9"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8796 - 87CB<br>Segment part 9.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\utilities\Segpart_9"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8898 - 88C9<br>Segment part 9.</font>
   <td nowrap><font size=2><a name="MM\utilities\printHexBytes"><b>printHexBytes</b></a>
 <br>               calls direct
 <br>               CSTACK = 00000000 ( 0000000A )
 </font>
-  <td><font size=2>8796 </font>
+  <td><font size=2>8898 </font>
   <td><font size=2><a href="#MM\znp_example_utils\Segpart_10">pollAndDisplay (znp_example_utils)</a>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\utilities\Segpart_2"><b>DATA16_C</b></a></b><br>Relative segment<br> 813F - 8144<br>Segment part 2.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\utilities\Segpart_2"><b>DATA16_C</b></a></b><br>Relative segment<br> 8164 - 8169<br>Segment part 2.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
   <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\utilities\Segpart_9">printHexBytes</a>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\utilities\Segpart_3"><b>DATA16_C</b></a></b><br>Relative segment<br> 8145 - 8147<br>Segment part 3.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\utilities\Segpart_3"><b>DATA16_C</b></a></b><br>Relative segment<br> 816A - 816C<br>Segment part 3.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
   <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\utilities\Segpart_9">printHexBytes</a>
 <tr valign=top>
@@ -979,15 +1008,15 @@ __program_start
   <td><font size=2>0028 </font>
   <td align=center><font size=2>-</font>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\znp_example_utils\Segpart_14"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8974 - 8991<br>Segment part 14.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\znp_example_utils\Segpart_14"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 89C2 - 89DF<br>Segment part 14.</font>
   <td nowrap><font size=2><a name="MM\znp_example_utils\handleReturnValue"><b>handleReturnValue</b></a>
 <br>               calls direct
 <br>               CSTACK = 00000000 ( 00000004 )
 </font>
-  <td><font size=2>8974 </font>
-  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_15">main (example_basic_comms_coordinator_sapi)</a>
+  <td><font size=2>89C2 </font>
+  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_27">main (example_basic_comms_coordinator_sapi)</a>
 <tr valign=top>
-  <td rowspan=2 ><font size=2><b><a name="MM\znp_example_utils\Segpart_10"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 85F2 - 864F<br>Segment part 10.</font>
+  <td rowspan=2 ><font size=2><b><a name="MM\znp_example_utils\Segpart_10"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 85E4 - 863B<br>Segment part 10.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
   <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\znp_example_utils\Segpart_12">displayReceivedMessages</a>
 <tr valign=top>
@@ -995,40 +1024,40 @@ __program_start
 <br>               calls direct
 <br>               CSTACK = 00000000 ( 00000006 )
 </font>
-  <td><font size=2>85F2 </font>
+  <td><font size=2>85E4 </font>
   <td align=center><font size=2>-</font>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\znp_example_utils\Segpart_12"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8A42 - 8A4F<br>Segment part 12.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\znp_example_utils\Segpart_12"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8A74 - 8A81<br>Segment part 12.</font>
   <td nowrap><font size=2><a name="MM\znp_example_utils\displayReceivedMessages"><b>displayReceivedMessages</b></a>
 <br>               calls direct
 <br>               CSTACK = 00000000 ( 00000002 )
 </font>
-  <td><font size=2>8A42 </font>
-  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_15">main (example_basic_comms_coordinator_sapi)</a>
+  <td><font size=2>8A74 </font>
+  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_27">main (example_basic_comms_coordinator_sapi)</a>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\znp_example_utils\Segpart_3"><b>DATA16_C</b></a></b><br>Relative segment<br> 8148 - 8151<br>Segment part 3.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\znp_example_utils\Segpart_3"><b>DATA16_C</b></a></b><br>Relative segment<br> 816D - 8176<br>Segment part 3.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
   <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\znp_example_utils\Segpart_14">handleReturnValue</a>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\znp_example_utils\Segpart_4"><b>DATA16_C</b></a></b><br>Relative segment<br> 8152 - 8166<br>Segment part 4.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\znp_example_utils\Segpart_4"><b>DATA16_C</b></a></b><br>Relative segment<br> 8177 - 818B<br>Segment part 4.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
   <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\znp_example_utils\Segpart_14">handleReturnValue</a>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\znp_example_utils\Segpart_5"><b>DATA16_C</b></a></b><br>Relative segment<br> 8167 - 816D<br>Segment part 5.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\znp_example_utils\Segpart_5"><b>DATA16_C</b></a></b><br>Relative segment<br> 818C - 8192<br>Segment part 5.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
   <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\znp_example_utils\Segpart_10">pollAndDisplay</a>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\znp_example_utils\Segpart_6"><b>DATA16_C</b></a></b><br>Relative segment<br> 816E - 8177<br>Segment part 6.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\znp_example_utils\Segpart_6"><b>DATA16_C</b></a></b><br>Relative segment<br> 8193 - 819C<br>Segment part 6.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
   <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\znp_example_utils\Segpart_10">pollAndDisplay</a>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\znp_example_utils\Segpart_7"><b>DATA16_C</b></a></b><br>Relative segment<br> 8178 - 817A<br>Segment part 7.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\znp_example_utils\Segpart_7"><b>DATA16_C</b></a></b><br>Relative segment<br> 819D - 819F<br>Segment part 7.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
   <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\znp_example_utils\Segpart_10">pollAndDisplay</a>
 <tr valign=top>
   <td rowspan=10 ><font size=2><b>C:\Users\Baek\IAR workspace\sd_mobile_app\ZNP Examples\IAR\Debug\Obj\znp_interface.r43</b></font>
   <td rowspan=10><font size=2><a name="MM\znp_interface"><b>znp_interface</b></a><br>Program module</font>
-  <td rowspan=2 ><font size=2><b><a name="MM\znp_interface\Segpart_46"><b>DATA16_Z</b></a></b><br>Relative segment<br> 0210 - 0211<br>Segment part 46.</font>
+  <td rowspan=2 ><font size=2><b><a name="MM\znp_interface\Segpart_46"><b>DATA16_Z</b></a></b><br>Relative segment<br> 020E - 020F<br>Segment part 46.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
   <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\znp_interface\Segpart_61">setCallbacks</a>
 <br><a href="#MM\znp_interface\Segpart_62">setStartupOptions</a>
@@ -1037,20 +1066,20 @@ __program_start
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\znp_interface\znpResult"><b>znpResult</b></a>
 </font>
-  <td><font size=2>0210 </font>
+  <td><font size=2>020E </font>
   <td><font size=2><a href="#MM\znp_example_utils\Segpart_14">handleReturnValue (znp_example_utils)</a>
-<br><a href="#MM\simple_api\Segpart_6">sapiRegisterGenericApplication (simple_api)</a>
-<br><a href="#MM\simple_api\Segpart_5">sapiStartApplication (simple_api)</a>
+<br><a href="#MM\simple_api\Segpart_14">sapiRegisterGenericApplication (simple_api)</a>
+<br><a href="#MM\simple_api\Segpart_13">sapiStartApplication (simple_api)</a>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\znp_interface\Segpart_78"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8A72 - 8A79<br>Segment part 78.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\znp_interface\Segpart_78"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8A9C - 8AA3<br>Segment part 78.</font>
   <td nowrap><font size=2><a name="MM\znp_interface\znpInit"><b>znpInit</b></a>
 <br>               calls direct
 <br>               CSTACK = 00000000 ( 00000002 )
 </font>
-  <td><font size=2>8A72 </font>
-  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_15">main (example_basic_comms_coordinator_sapi)</a>
+  <td><font size=2>8A9C </font>
+  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_27">main (example_basic_comms_coordinator_sapi)</a>
 <tr valign=top>
-  <td rowspan=2 ><font size=2><b><a name="MM\znp_interface\Segpart_77"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8894 - 88BF<br>Segment part 77.</font>
+  <td rowspan=2 ><font size=2><b><a name="MM\znp_interface\Segpart_77"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8928 - 8953<br>Segment part 77.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
   <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\znp_interface\Segpart_78">znpInit</a>
 <tr valign=top>
@@ -1058,48 +1087,48 @@ __program_start
 <br>               calls direct
 <br>               CSTACK = 00000000 ( 00000002 )
 </font>
-  <td><font size=2>8894 </font>
-  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_15">main (example_basic_comms_coordinator_sapi)</a>
+  <td><font size=2>8928 </font>
+  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_27">main (example_basic_comms_coordinator_sapi)</a>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\znp_interface\Segpart_66"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8760 - 8795<br>Segment part 66.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\znp_interface\Segpart_66"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 87FA - 882F<br>Segment part 66.</font>
   <td nowrap><font size=2><a name="MM\znp_interface\setZigbeeDeviceType"><b>setZigbeeDeviceType</b></a>
 <br>               calls direct
 <br>               CSTACK = 00000000 ( 00000002 )
 </font>
-  <td><font size=2>8760 </font>
-  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_15">main (example_basic_comms_coordinator_sapi)</a>
+  <td><font size=2>87FA </font>
+  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_27">main (example_basic_comms_coordinator_sapi)</a>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\znp_interface\Segpart_62"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8802 - 8835<br>Segment part 62.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\znp_interface\Segpart_62"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8830 - 8863<br>Segment part 62.</font>
   <td nowrap><font size=2><a name="MM\znp_interface\setStartupOptions"><b>setStartupOptions</b></a>
 <br>               calls direct
 <br>               CSTACK = 00000000 ( 00000002 )
 </font>
-  <td><font size=2>8802 </font>
-  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_15">main (example_basic_comms_coordinator_sapi)</a>
+  <td><font size=2>8830 </font>
+  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_27">main (example_basic_comms_coordinator_sapi)</a>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\znp_interface\Segpart_61"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8728 - 875F<br>Segment part 61.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\znp_interface\Segpart_61"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8754 - 878B<br>Segment part 61.</font>
   <td nowrap><font size=2><a name="MM\znp_interface\setCallbacks"><b>setCallbacks</b></a>
 <br>               calls direct
 <br>               CSTACK = 00000000 ( 00000002 )
 </font>
-  <td><font size=2>8728 </font>
-  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_15">main (example_basic_comms_coordinator_sapi)</a>
+  <td><font size=2>8754 </font>
+  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_27">main (example_basic_comms_coordinator_sapi)</a>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\znp_interface\Segpart_53"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 84F4 - 8591<br>Segment part 53.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\znp_interface\Segpart_53"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8508 - 8587<br>Segment part 53.</font>
   <td nowrap><font size=2><a name="MM\znp_interface\waitForMessage"><b>waitForMessage</b></a>
 <br>               calls direct
 <br>               CSTACK = 00000000 ( 0000000C )
 </font>
-  <td><font size=2>84F4 </font>
-  <td><font size=2><a href="#MM\simple_api\Segpart_5">sapiStartApplication (simple_api)</a>
+  <td><font size=2>8508 </font>
+  <td><font size=2><a href="#MM\simple_api\Segpart_13">sapiStartApplication (simple_api)</a>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\znp_interface\Segpart_44"><b>DATA16_C</b></a></b><br>Relative segment<br> 817B - 81B7<br>Segment part 44.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\znp_interface\Segpart_44"><b>DATA16_C</b></a></b><br>Relative segment<br> 81A0 - 81DC<br>Segment part 44.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
   <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\znp_interface\Segpart_53">waitForMessage</a>
 <tr valign=top>
   <td rowspan=6 ><font size=2><b>C:\Users\Baek\IAR workspace\sd_mobile_app\ZNP Examples\IAR\Debug\Obj\znp_interface_spi.r43</b></font>
   <td rowspan=6><font size=2><a name="MM\znp_interface_spi"><b>znp_interface_spi</b></a><br>Program module</font>
-  <td rowspan=2 ><font size=2><b><a name="MM\znp_interface_spi\Segpart_4"><b>DATA16_Z</b></a></b><br>Relative segment<br> 0220 - 0283<br>Segment part 4.</font>
+  <td rowspan=2 ><font size=2><b><a name="MM\znp_interface_spi\Segpart_4"><b>DATA16_Z</b></a></b><br>Relative segment<br> 021F - 0282<br>Segment part 4.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
   <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\znp_interface_spi\Segpart_6">sendMessage</a>
 <br><a href="#MM\znp_interface_spi\Segpart_5">sendSreq</a>
@@ -1107,17 +1136,17 @@ __program_start
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\znp_interface_spi\znpBuf"><b>znpBuf</b></a>
 </font>
-  <td><font size=2>0220 </font>
+  <td><font size=2>021F </font>
   <td><font size=2><a href="#MM\znp_example_utils\Segpart_10">pollAndDisplay (znp_example_utils)</a>
-<br><a href="#MM\simple_api\Segpart_6">sapiRegisterGenericApplication (simple_api)</a>
-<br><a href="#MM\simple_api\Segpart_5">sapiStartApplication (simple_api)</a>
+<br><a href="#MM\simple_api\Segpart_14">sapiRegisterGenericApplication (simple_api)</a>
+<br><a href="#MM\simple_api\Segpart_13">sapiStartApplication (simple_api)</a>
 <br><a href="#MM\znp_interface\Segpart_61">setCallbacks (znp_interface)</a>
 <br><a href="#MM\znp_interface\Segpart_62">setStartupOptions (znp_interface)</a>
 <br><a href="#MM\znp_interface\Segpart_66">setZigbeeDeviceType (znp_interface)</a>
 <br><a href="#MM\znp_interface\Segpart_53">waitForMessage (znp_interface)</a>
 <br><a href="#MM\znp_interface\Segpart_77">znpReset (znp_interface)</a>
 <tr valign=top>
-  <td rowspan=2 ><font size=2><b><a name="MM\znp_interface_spi\Segpart_5"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8592 - 85F1<br>Segment part 5.</font>
+  <td rowspan=2 ><font size=2><b><a name="MM\znp_interface_spi\Segpart_5"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8588 - 85E3<br>Segment part 5.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
   <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\znp_interface_spi\Segpart_6">sendMessage</a>
 <br><a href="#MM\znp_interface_spi\Segpart_7">spiPoll</a>
@@ -1126,106 +1155,106 @@ __program_start
 <br>               calls direct
 <br>               CSTACK = 00000000 ( 00000002 )
 </font>
-  <td><font size=2>8592 </font>
+  <td><font size=2>8588 </font>
   <td align=center><font size=2>-</font>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\znp_interface_spi\Segpart_7"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8A32 - 8A41<br>Segment part 7.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\znp_interface_spi\Segpart_7"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8A64 - 8A73<br>Segment part 7.</font>
   <td nowrap><font size=2><a name="MM\znp_interface_spi\spiPoll"><b>spiPoll</b></a>
 <br>               calls direct
 <br>               CSTACK = 00000000 ( 00000002 )
 </font>
-  <td><font size=2>8A32 </font>
+  <td><font size=2>8A64 </font>
   <td><font size=2><a href="#MM\znp_example_utils\Segpart_10">pollAndDisplay (znp_example_utils)</a>
 <br><a href="#MM\znp_interface\Segpart_53">waitForMessage (znp_interface)</a>
 <br><a href="#MM\znp_interface\Segpart_77">znpReset (znp_interface)</a>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\znp_interface_spi\Segpart_6"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 869C - 86E1<br>Segment part 6.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\znp_interface_spi\Segpart_6"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 86D4 - 8719<br>Segment part 6.</font>
   <td nowrap><font size=2><a name="MM\znp_interface_spi\sendMessage"><b>sendMessage</b></a>
 <br>               calls direct
 <br>               CSTACK = 00000000 ( 00000006 )
 </font>
-  <td><font size=2>869C </font>
-  <td><font size=2><a href="#MM\simple_api\Segpart_6">sapiRegisterGenericApplication (simple_api)</a>
-<br><a href="#MM\simple_api\Segpart_5">sapiStartApplication (simple_api)</a>
+  <td><font size=2>86D4 </font>
+  <td><font size=2><a href="#MM\simple_api\Segpart_14">sapiRegisterGenericApplication (simple_api)</a>
+<br><a href="#MM\simple_api\Segpart_13">sapiStartApplication (simple_api)</a>
 <br><a href="#MM\znp_interface\Segpart_61">setCallbacks (znp_interface)</a>
 <br><a href="#MM\znp_interface\Segpart_62">setStartupOptions (znp_interface)</a>
 <br><a href="#MM\znp_interface\Segpart_66">setZigbeeDeviceType (znp_interface)</a>
 <tr valign=top>
-  <td rowspan=24 ><font size=2><b>C:\Program Files\IAR Systems\Embedded Workbench 6.0 Kickstart\430\LIB\DLIB\dl430fn.r43</b></font>
+  <td rowspan=22 ><font size=2><b>C:\Program Files\IAR Systems\Embedded Workbench 6.0 Evaluation\430\LIB\DLIB\dl430fn.r43</b></font>
   <td rowspan=1><font size=2><a name="MM\?__dbg_break"><b>?__dbg_break</b></a><br>Library module</font>
-  <td rowspan=1 ><font size=2><b><a name="MM\?__dbg_break\Segpart_2"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8A82 - 8A83<br>Segment part 2.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\?__dbg_break\Segpart_2"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8AB4 - 8AB5<br>Segment part 2.</font>
   <td nowrap><font size=2><a name="MM\?__dbg_break\__DebugBreak"><b>__DebugBreak</b></a>
 </font>
-  <td><font size=2>8A82 </font>
+  <td><font size=2>8AB4 </font>
   <td><font size=2><a href="#MM\?__exit\Segpart_2">__exit (?__exit)</a>
 <tr valign=top>
   <td rowspan=1><font size=2><a name="MM\?__exit"><b>?__exit</b></a><br>Library module</font>
-  <td rowspan=1 ><font size=2><b><a name="MM\?__exit\Segpart_2"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 89FA - 8A0D<br>Segment part 2.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\?__exit\Segpart_2"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8A2C - 8A3F<br>Segment part 2.</font>
   <td nowrap><font size=2><a name="MM\?__exit\__exit"><b>__exit</b></a>
 <br>               calls direct
 </font>
-  <td><font size=2>89FA </font>
+  <td><font size=2>8A2C </font>
   <td><font size=2><a href="#MM\?_exit\Segpart_5">Segment part 5 (?_exit)</a>
 <br><a href="#MM\?_exit\Segpart_0">_exit (?_exit)</a>
 <tr valign=top>
   <td rowspan=2><font size=2><a name="MM\?_exit"><b>?_exit</b></a><br>Library module</font>
-  <td rowspan=1 ><font size=2><b><a name="MM\?_exit\Segpart_0"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8A7A <br>Segment part 0.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\?_exit\Segpart_0"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8AB0 <br>Segment part 0.</font>
   <td nowrap><font size=2><a name="MM\?_exit\_exit"><b>_exit</b></a>
 </font>
-  <td><font size=2>8A7A </font>
+  <td><font size=2>8AB0 </font>
   <td><font size=2><a href="#MM\?exit\Segpart_2">exit (?exit)</a>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\?_exit\Segpart_5"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8A7A - 8A7D<br>Segment part 5.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\?_exit\Segpart_5"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8AB0 - 8AB3<br>Segment part 5.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
   <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\?_exit\Segpart_0">_exit</a>
 <tr valign=top>
   <td rowspan=8><font size=2><a name="MM\?cstart"><b>?cstart</b></a><br>Library module</font>
   <td rowspan=1 ><font size=2><b><a name="MM\?cstart\Segpart_1"><b>CSTACK</b></a></b><br>Relative segment<br> 05B0 <br>Segment part 1.</font>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\?cstart\Segpart_2"><b>DATA16_Z</b></a></b><br>Relative segment<br> 0212 <br>Segment part 2.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\?cstart\Segpart_2"><b>DATA16_Z</b></a></b><br>Relative segment<br> 0210 <br>Segment part 2.</font>
 <tr valign=top>
-  <td rowspan=2 ><font size=2><b><a name="MM\?cstart\Segpart_7"><b>CSTART</b></a></b><br>Relative segment<br> 81B8 - 81BB<br>Segment part 7.</font>
+  <td rowspan=2 ><font size=2><b><a name="MM\?cstart\Segpart_7"><b>CSTART</b></a></b><br>Relative segment<br> 81DE - 81E1<br>Segment part 7.</font>
   <td nowrap><font size=2><a name="MM\?cstart\__program_start"><b>__program_start</b></a>
 </font>
-  <td><font size=2>81B8 </font>
+  <td><font size=2>81DE </font>
   <td><font size=2><a href="#MM\?reset_vector\Segpart_0">?reset_vector (?reset_vector)</a>
 <br><a href="#MM\?ABS_ENTRY_MOD\Absparts">Absolute parts (?ABS_ENTRY_MOD)</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\?cstart\?cstart_begin"><b>?cstart_begin</b></a>
 </font>
-  <td><font size=2>81B8 </font>
+  <td><font size=2>81DE </font>
   <td align=center><font size=2>-</font>
 <tr valign=top>
-  <td rowspan=1 ><font size=2><b><a name="MM\?cstart\Segpart_10"><b>CSTART</b></a></b><br>Relative segment<br> 81BC - 81C7<br>Segment part 10.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\?cstart\Segpart_10"><b>CSTART</b></a></b><br>Relative segment<br> 81E2 - 81ED<br>Segment part 10.</font>
   <td nowrap><font size=2><a name="MM\?cstart\?cstart_init_zero"><b>?cstart_init_zero</b></a>
 </font>
-  <td><font size=2>81BC </font>
-  <td><font size=2><a href="#MM\hal_cc2530znp_target_board\Segpart_61">accelerometerIsr (hal_cc2530znp_target_board)</a>
+  <td><font size=2>81E2 </font>
+  <td><font size=2><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_20">BitCnt (example_basic_comms_coordinator_sapi)</a>
+<br><a href="#MM\example_basic_comms_coordinator_sapi\Segpart_21">TXByte (example_basic_comms_coordinator_sapi)</a>
+<br><a href="#MM\hal_cc2530znp_target_board\Segpart_58">accelerometerIsr (hal_cc2530znp_target_board)</a>
 <br><a href="#MM\printf\Segpart_2">bf (printf)</a>
 <br><a href="#MM\printf\Segpart_3">buf (printf)</a>
-<br><a href="#MM\hal_cc2530znp_target_board\Segpart_59">buttonIsr (hal_cc2530znp_target_board)</a>
-<br><a href="#MM\hal_cc2530znp_target_board\Segpart_58">debugConsoleIsr (hal_cc2530znp_target_board)</a>
+<br><a href="#MM\hal_cc2530znp_target_board\Segpart_56">buttonIsr (hal_cc2530znp_target_board)</a>
 <br><a href="#MM\printf\Segpart_4">num (printf)</a>
-<br><a href="#MM\hal_cc2530znp_target_board\Segpart_62">srdyIsr (hal_cc2530znp_target_board)</a>
-<br><a href="#MM\hal_cc2530znp_target_board\Segpart_60">timerIsr (hal_cc2530znp_target_board)</a>
+<br><a href="#MM\hal_cc2530znp_target_board\Segpart_59">srdyIsr (hal_cc2530znp_target_board)</a>
 <br><a href="#MM\printf\Segpart_5">uc (printf)</a>
-<br><a href="#MM\hal_cc2530znp_target_board\Segpart_63">wakeupFlags (hal_cc2530znp_target_board)</a>
+<br><a href="#MM\hal_cc2530znp_target_board\Segpart_60">wakeupFlags (hal_cc2530znp_target_board)</a>
 <br><a href="#MM\znp_interface_spi\Segpart_4">znpBuf (znp_interface_spi)</a>
 <br><a href="#MM\znp_interface\Segpart_46">znpResult (znp_interface)</a>
 <br><a href="#MM\printf\Segpart_6">zs (printf)</a>
 <tr valign=top>
-  <td rowspan=3 ><font size=2><b><a name="MM\?cstart\Segpart_14"><b>CSTART</b></a></b><br>Relative segment<br> 81C8 - 81CF<br>Segment part 14.</font>
+  <td rowspan=3 ><font size=2><b><a name="MM\?cstart\Segpart_14"><b>CSTART</b></a></b><br>Relative segment<br> 81EE - 81F5<br>Segment part 14.</font>
   <td><font size=2>  <i><font size=2>Intra module refs</font>
   <td><font size=2>&nbsp;  <td><font size=2><a href="#MM\?cstart\Segpart_7">Segment part 7</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\?cstart\?cstart_call_main"><b>?cstart_call_main</b></a>
 </font>
-  <td><font size=2>81C8 </font>
+  <td><font size=2>81EE </font>
   <td align=center><font size=2>-</font>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\?cstart\?cstart_end"><b>?cstart_end</b></a>
 </font>
-  <td><font size=2>81D0 </font>
+  <td><font size=2>81F6 </font>
   <td align=center><font size=2>-</font>
 <tr valign=top>
   <td rowspan=1><font size=2><a name="MM\?reset_vector"><b>?reset_vector</b></a><br>Library module</font>
@@ -1236,72 +1265,59 @@ __program_start
   <td><font size=2><a href="#MM\?cstart\Segpart_7">Segment part 7 (?cstart)</a>
 <tr valign=top>
   <td rowspan=6><font size=2><a name="MM\?Epilogue"><b>?Epilogue</b></a><br>Library module</font>
-  <td rowspan=6 ><font size=2><b><a name="MM\?Epilogue\Segpart_0"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8A0E - 8A1F<br>Segment part 0.</font>
+  <td rowspan=6 ><font size=2><b><a name="MM\?Epilogue\Segpart_0"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8A40 - 8A51<br>Segment part 0.</font>
   <td nowrap><font size=2><a name="MM\?Epilogue\?Epilogue3"><b>?Epilogue3</b></a>
 </font>
-  <td><font size=2>8A18 </font>
+  <td><font size=2>8A4A </font>
   <td><font size=2><a href="#MM\utilities\Segpart_9">printHexBytes (utilities)</a>
-<br><a href="#MM\znp_interface\Segpart_53">waitForMessage (znp_interface)</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\?Epilogue\?Epilogue4"><b>?Epilogue4</b></a>
 </font>
-  <td><font size=2>8A16 </font>
-  <td><font size=2><a href="#MM\printf\Segpart_10">tfp_printf (printf)</a>
+  <td><font size=2>8A48 </font>
+  <td align=center><font size=2>-</font>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\?Epilogue\?Epilogue5"><b>?Epilogue5</b></a>
 </font>
-  <td><font size=2>8A14 </font>
-  <td align=center><font size=2>-</font>
+  <td><font size=2>8A46 </font>
+  <td><font size=2><a href="#MM\printf\Segpart_10">tfp_printf (printf)</a>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\?Epilogue\?Epilogue6"><b>?Epilogue6</b></a>
 </font>
-  <td><font size=2>8A12 </font>
+  <td><font size=2>8A44 </font>
   <td align=center><font size=2>-</font>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\?Epilogue\?Epilogue7"><b>?Epilogue7</b></a>
 </font>
-  <td><font size=2>8A10 </font>
+  <td><font size=2>8A42 </font>
   <td align=center><font size=2>-</font>
 <tr valign=top>
   <td nowrap><font size=2><a name="MM\?Epilogue\?Epilogue8"><b>?Epilogue8</b></a>
 </font>
-  <td><font size=2>8A0E </font>
+  <td><font size=2>8A40 </font>
   <td align=center><font size=2>-</font>
 <tr valign=top>
   <td rowspan=1><font size=2><a name="MM\?exit"><b>?exit</b></a><br>Library module</font>
-  <td rowspan=1 ><font size=2><b><a name="MM\?exit\Segpart_2"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8A7E - 8A81<br>Segment part 2.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\?exit\Segpart_2"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8AAC - 8AAF<br>Segment part 2.</font>
   <td nowrap><font size=2><a name="MM\?exit\exit"><b>exit</b></a>
 <br>               calls direct
 <br>               CSTACK = 00000000 ( 00000002 )
 </font>
-  <td><font size=2>8A7E </font>
+  <td><font size=2>8AAC </font>
   <td><font size=2><a href="#MM\?cstart\Segpart_14">Segment part 14 (?cstart)</a>
 <tr valign=top>
   <td rowspan=1><font size=2><a name="MM\?Mul32"><b>?Mul32</b></a><br>Library module</font>
-  <td rowspan=1 ><font size=2><b><a name="MM\?Mul32\Segpart_0"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8836 - 8865<br>Segment part 0.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\?Mul32\Segpart_0"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 88CA - 88F9<br>Segment part 0.</font>
   <td nowrap><font size=2><a name="MM\?Mul32\?Mul32"><b>?Mul32</b></a>
 </font>
-  <td><font size=2>8836 </font>
+  <td><font size=2>88CA </font>
   <td><font size=2><a href="#MM\znp_interface\Segpart_53">waitForMessage (znp_interface)</a>
-<tr valign=top>
-  <td rowspan=2><font size=2><a name="MM\?DivMod816u"><b>?DivMod816u</b></a><br>Library module</font>
-  <td rowspan=2 ><font size=2><b><a name="MM\?DivMod816u\Segpart_0"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8992 - 89AD<br>Segment part 0.</font>
-  <td nowrap><font size=2><a name="MM\?DivMod816u\?DivMod8u"><b>?DivMod8u</b></a>
-</font>
-  <td><font size=2>8992 </font>
-  <td><font size=2><a href="#MM\znp_interface\Segpart_53">waitForMessage (znp_interface)</a>
-<tr valign=top>
-  <td nowrap><font size=2><a name="MM\?DivMod816u\?DivMod16u"><b>?DivMod16u</b></a>
-</font>
-  <td><font size=2>8996 </font>
-  <td align=center><font size=2>-</font>
 <tr valign=top>
   <td rowspan=1><font size=2><a name="MM\?memzero"><b>?memzero</b></a><br>Library module</font>
-  <td rowspan=1 ><font size=2><b><a name="MM\?memzero\Segpart_4"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8A20 - 8A31<br>Segment part 4.</font>
+  <td rowspan=1 ><font size=2><b><a name="MM\?memzero\Segpart_4"><b>&lt;CODE&gt; 1</b></a></b><br>Relative segment<br> 8A52 - 8A63<br>Segment part 4.</font>
   <td nowrap><font size=2><a name="MM\?memzero\__data16_memzero"><b>__data16_memzero</b></a>
 <br>               CSTACK = 00000000 ( 00000002 )
 </font>
-  <td><font size=2>8A20 </font>
+  <td><font size=2>8A52 </font>
   <td><font size=2><a href="#MM\?cstart\Segpart_10">?cstart_init_zero (?cstart)</a>
 </table>
 
@@ -1323,13 +1339,6 @@ __program_start
 <td align=right valign=top><font size=2>(Rel)</font></td>
 <td align=right valign=top><font size=2>(Abs)</font></td>
 <td align=right valign=top><font size=2>(Rel)</font></td>
-</tr>
-<tr>
-<td valign=top><font size=2>?DivMod816u</font></td>
-<td align=right valign=top><font size=2>28</font></td>
-<td align=right valign=top><font size=2>&nbsp;</font></td>
-<td align=right valign=top><font size=2>&nbsp;</font></td>
-<td align=right valign=top><font size=2>&nbsp;</font></td>
 </tr>
 <tr>
 <td valign=top><font size=2>?Epilogue</font></td>
@@ -1395,57 +1404,57 @@ __program_start
 <td align=right valign=top><font size=2>&nbsp;</font></td>
 </tr>
 <tr>
-<td valign=top><font size=2>example_basic_comms_coordinator_sapi</font></td>
-<td align=right valign=top><font size=2>178</font></td>
-<td align=right valign=top><font size=2>&nbsp;</font></td>
-<td align=right valign=top><font size=2>&nbsp;</font></td>
+<td valign=top><font size=2>example_basic_comms_coordinator_sapi<br>&nbsp;&nbsp;+&nbsp;shared<br>&nbsp;&nbsp;+&nbsp;common</font></td>
+<td align=right valign=top><font size=2>348<br>20</font></td>
+<td align=right valign=top><font size=2>3</font></td>
+<td align=right valign=top><font size=2>2<br>8</font></td>
 <td align=right valign=top><font size=2>319</font></td>
 </tr>
 <tr>
 <td valign=top><font size=2>hal_cc2530znp_target_board<br>&nbsp;&nbsp;+&nbsp;shared<br>&nbsp;&nbsp;+&nbsp;common</font></td>
-<td align=right valign=top><font size=2>462<br>20</font></td>
-<td align=right valign=top><font size=2>12</font></td>
-<td align=right valign=top><font size=2>58<br>2</font></td>
+<td align=right valign=top><font size=2>406<br>8</font></td>
+<td align=right valign=top><font size=2>8</font></td>
+<td align=right valign=top><font size=2>50<br>2</font></td>
 <td align=right valign=top><font size=2>&nbsp;</font></td>
 </tr>
 <tr>
 <td valign=top><font size=2>printf</font></td>
-<td align=right valign=top><font size=2>554</font></td>
+<td align=right valign=top><font size=2>518</font></td>
 <td align=right valign=top><font size=2>18</font></td>
 <td align=right valign=top><font size=2>&nbsp;</font></td>
 <td align=right valign=top><font size=2>&nbsp;</font></td>
 </tr>
 <tr>
 <td valign=top><font size=2>simple_api</font></td>
-<td align=right valign=top><font size=2>146</font></td>
+<td align=right valign=top><font size=2>152</font></td>
 <td align=right valign=top><font size=2>&nbsp;</font></td>
 <td align=right valign=top><font size=2>&nbsp;</font></td>
-<td align=right valign=top><font size=2>&nbsp;</font></td>
+<td align=right valign=top><font size=2>37</font></td>
 </tr>
 <tr>
 <td valign=top><font size=2>utilities</font></td>
-<td align=right valign=top><font size=2>54</font></td>
+<td align=right valign=top><font size=2>50</font></td>
 <td align=right valign=top><font size=2>&nbsp;</font></td>
 <td align=right valign=top><font size=2>&nbsp;</font></td>
 <td align=right valign=top><font size=2>9</font></td>
 </tr>
 <tr>
 <td valign=top><font size=2>znp_example_utils<br>&nbsp;&nbsp;+&nbsp;shared</font></td>
-<td align=right valign=top><font size=2>138</font></td>
+<td align=right valign=top><font size=2>132</font></td>
 <td align=right valign=top><font size=2>&nbsp;</font></td>
 <td align=right valign=top><font size=2><br>1</font></td>
 <td align=right valign=top><font size=2>51</font></td>
 </tr>
 <tr>
 <td valign=top><font size=2>znp_interface</font></td>
-<td align=right valign=top><font size=2>372</font></td>
+<td align=right valign=top><font size=2>342</font></td>
 <td align=right valign=top><font size=2>2</font></td>
 <td align=right valign=top><font size=2>&nbsp;</font></td>
 <td align=right valign=top><font size=2>61</font></td>
 </tr>
 <tr>
 <td valign=top><font size=2>znp_interface_spi</font></td>
-<td align=right valign=top><font size=2>182</font></td>
+<td align=right valign=top><font size=2>178</font></td>
 <td align=right valign=top><font size=2>100</font></td>
 <td align=right valign=top><font size=2>&nbsp;</font></td>
 <td align=right valign=top><font size=2>&nbsp;</font></td>
@@ -1466,10 +1475,10 @@ __program_start
 </tr>
 <tr>
 <th align=left valign=top><font size=2>Total:<br>&nbsp;&nbsp;+&nbsp;common</font></th>
-<th align=right valign=top><font size=2>2&nbsp;254<br>20</font></th>
-<th align=right valign=top><font size=2>212</font></th>
-<th align=right valign=top><font size=2>61</font></th>
-<th align=right valign=top><font size=2>440</font></th>
+<th align=right valign=top><font size=2>2&nbsp;266<br>20</font></th>
+<th align=right valign=top><font size=2>211</font></th>
+<th align=right valign=top><font size=2>63</font></th>
+<th align=right valign=top><font size=2>477</font></th>
 </tr>
 </table>
 <p><hr><p>
@@ -1518,11 +1527,11 @@ __program_start
   <td align=center colspan=2><font size=2>0056 - 0058</font>
   <td align=right><font size=2>3</font>
 <tr valign=top>
-  <td align=center colspan=2><font size=2>0061 - 0064</font>
-  <td align=right><font size=2>4</font>
+  <td align=center colspan=2><font size=2>0060 - 0064</font>
+  <td align=right><font size=2>5</font>
 <tr valign=top>
-  <td align=center colspan=2><font size=2>0066 - 006B</font>
-  <td align=right><font size=2>6</font>
+  <td align=center colspan=2><font size=2>0067 - 006B</font>
+  <td align=right><font size=2>5</font>
 <tr valign=top>
   <td align=center colspan=2><font size=2>006E - 006F</font>
   <td align=right><font size=2>2</font>
@@ -1536,8 +1545,8 @@ __program_start
   <td align=center colspan=2><font size=2>0166 - 0167</font>
   <td align=right><font size=2>2</font>
 <tr valign=top>
-  <td align=center colspan=2><font size=2>0172 - 0173</font>
-  <td align=right><font size=2>2</font>
+  <td align=center colspan=2><font size=2>0170 - 0173</font>
+  <td align=right><font size=2>4</font>
 <tr valign=top>
   <td align=center colspan=2><font size=2>0176 - 0177</font>
   <td align=right><font size=2>2</font>
@@ -1554,8 +1563,8 @@ __program_start
 <tr valign=top>
   <td rowspan=1 ><font size=2>DATA16_Z</font>
   <td rowspan=1 ><font size=2></font>
-  <td align=center colspan=2><font size=2>0200 - 0283</font>
-  <td align=right><font size=2>84</font>
+  <td align=center colspan=2><font size=2>0200 - 0282</font>
+  <td align=right><font size=2>83</font>
   <td rowspan=1 ><font size=2>Relative</font>
   <td align=center><font size=2>1</font>
 <tr valign=top>
@@ -1575,22 +1584,22 @@ __program_start
 <tr valign=top>
   <td rowspan=1 ><font size=2>DATA16_C</font>
   <td rowspan=1 ><font size=2></font>
-  <td align=center colspan=2><font size=2>8000 - 81B7</font>
-  <td align=right><font size=2>1B8</font>
+  <td align=center colspan=2><font size=2>8000 - 81DC</font>
+  <td align=right><font size=2>1DD</font>
   <td rowspan=1 ><font size=2>Relative</font>
   <td align=center><font size=2>0</font>
 <tr valign=top>
   <td rowspan=1 ><font size=2>CSTART</font>
   <td rowspan=1 ><font size=2></font>
-  <td align=center colspan=2><font size=2>81B8 - 81CF</font>
+  <td align=center colspan=2><font size=2>81DE - 81F5</font>
   <td align=right><font size=2>18</font>
   <td rowspan=1 ><font size=2>Relative</font>
   <td align=center><font size=2>1</font>
 <tr valign=top>
   <td rowspan=1 ><font size=2>&lt;CODE&gt; 1</font>
   <td rowspan=1 ><font size=2></font>
-  <td align=center colspan=2><font size=2>81D0 - 8A83</font>
-  <td align=right><font size=2>8B4</font>
+  <td align=center colspan=2><font size=2>81F6 - 8AB5</font>
+  <td align=right><font size=2>8C0</font>
   <td rowspan=1 ><font size=2>Relative</font>
   <td align=center><font size=2>1</font>
 <tr valign=top>
@@ -1615,25 +1624,25 @@ __program_start
 
 <table >
 <tr>
-<td align=right valign=top>2&nbsp;274</td>
+<td align=right valign=top>2&nbsp;286</td>
 <td valign=top>bytes</td>
 <td valign=top>of</td>
 <td valign=top>CODE</td>
 <td valign=top>memory</td>
 </tr>
 <tr>
-<td align=right valign=top>212</td>
+<td align=right valign=top>211</td>
 <td valign=top>bytes</td>
 <td valign=top>of</td>
 <td valign=top>DATA</td>
 <td valign=top>memory</td>
 <td valign=top>(+</td>
-<td align=right valign=top>61</td>
+<td align=right valign=top>63</td>
 <td valign=top>absolute</td>
 <td valign=top>)</td>
 </tr>
 <tr>
-<td align=right valign=top>440</td>
+<td align=right valign=top>477</td>
 <td valign=top>bytes</td>
 <td valign=top>of</td>
 <td valign=top>CONST</td>

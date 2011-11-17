@@ -40,6 +40,20 @@ ByteLimit=50
 ShowArgs=0
 [Disassembly]
 MixedMode=1
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[CallStackLog]
+Enabled=0
+[DriverProfiling]
+Enabled=0
+Mode=0
+Graph=0
+Symbiont=0
 [Breakpoints]
 Bp0=_ "STD_CODE" "{$PROJ_DIR$\..\..\HAL\hal_cc2530znp_target_board.c}.78.11" 0 0 0 0 "" 0 ""
 Count=1
@@ -63,21 +77,7 @@ SP=0
 SR=0
 all registers=0
 File name=
-[Log file]
-LoggingEnabled=_ 0
-LogFile=_ ""
-Category=_ 0
-[TermIOLog]
-LoggingEnabled=_ 0
-LogFile=_ ""
 [Aliases]
 A0=_ "C:\Texas Instruments\CC2530ZNP Mini Kit\HAL\hal_cc2530znp_target_board.c" "C:\Users\Baek\IAR workspace\sd_mobile_app\HAL\hal_cc2530znp_target_board.c"
 Count=1
 SuppressDialog=0
-[CallStackLog]
-Enabled=0
-[DriverProfiling]
-Enabled=0
-Mode=0
-Graph=0
-Symbiont=0

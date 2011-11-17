@@ -70,9 +70,9 @@
           <Factory>TextEditor</Factory>
           <Filename>$WS_DIR$\..\example_basic_comms_router_sapi.c</Filename>
           <XPos>0</XPos>
-          <YPos>140</YPos>
-          <SelStart>5973</SelStart>
-          <SelEnd>5973</SelEnd>
+          <YPos>89</YPos>
+          <SelStart>4469</SelStart>
+          <SelEnd>4469</SelEnd>
         </Tab>
         <ActiveTab>2</ActiveTab>
         <Tab>
@@ -202,6 +202,9 @@
         <Row28>
           <Sizes/>
         </Row28>
+        <Row29>
+          <Sizes/>
+        </Row29>
       </Top>
       <Left>
         <Row0>

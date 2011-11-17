@@ -489,15 +489,15 @@ void stopTimer()
     TACTL = MC_0; 
 }
 
-#pragma vector=TIMERA0_VECTOR
-__interrupt void Timer_A (void)
-{
-    timerIsr();
-    if (wakeupFlags & WAKEUP_AFTER_TIMER)    
-    {
-        HAL_WAKEUP();     
-    }
-}
+//#pragma vector=TIMERA0_VECTOR
+//__interrupt void Timer_A (void)
+//{
+//    timerIsr();
+//    if (wakeupFlags & WAKEUP_AFTER_TIMER)    
+//    {
+//        HAL_WAKEUP();     
+//    }
+//}
 
 /** Calibrate VLO. Once this is done, the VLO can be used semi-accurately for timers etc. 
 Once calibrated, VLO is within ~2% of actual when using a 1% calibrated DCO frequency and temperature and supply voltage remain unchanged.

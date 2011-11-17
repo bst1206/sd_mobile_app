@@ -38,6 +38,7 @@
 #include "../ZNP/znp_interface.h"
 #include "../ZNP/simple_api.h"
 #include "znp_example_utils.h"   //for handleReturnValue() and polling()
+#include "../HAL/hal_lcd.h"
 
 //uncomment only ONE of the two options below:
 //#define USE_SECURITY_MODE_PRECONFIGURED_KEYS
@@ -130,6 +131,8 @@ int main( void )
     getNetworkConfigurationParameters();                
     getDeviceInformation();
 #endif    
+    
+    ConfigureTimerUart();
     
     /* Now the network is running - continually poll for any received messages from the ZNP */
     displayReceivedMessages();
