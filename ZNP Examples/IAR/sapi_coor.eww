@@ -4,12 +4,6 @@
   <project>
     <path>$WS_DIR$\Basic Comms - Coordinator - SAPI.ewp</path>
   </project>
-  <project>
-    <path>$WS_DIR$\Basic Comms - Router - SAPI.ewp</path>
-  </project>
-  <project>
-    <path>$WS_DIR$\..\..\..\lcd_example\lcd_example.ewp</path>
-  </project>
   <batchBuild/>
 </workspace>
 

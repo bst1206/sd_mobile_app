@@ -25,6 +25,7 @@
 #include "../ZNP/af_zdo.h"              //for pollingAndFindDevice()
 
 #include "../ZNP/znp_interface_spi.h"
+#include "../HAL/hal_lcd.h"
 
 extern unsigned char znpBuf[100];
 
@@ -64,6 +65,8 @@ void pollAndDisplay()
             }
             
             znpBuf[SRSP_LENGTH_FIELD] = 0;
+            
+            displayString(msg);
         } 
 }
 
