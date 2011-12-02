@@ -40,7 +40,7 @@ void handleReturnValue()
     else 
     {
         printf("ERROR %i; stopping\r\n", znpResult);
-//        while(1);   
+        while(1);   
     }
 }
 
@@ -55,7 +55,7 @@ void pollAndDisplay()
             printf("\r\nRx: ");
             printHexBytes(znpBuf, (znpBuf[SRSP_LENGTH_FIELD] + SRSP_HEADER_SIZE));
             
-            char* msg = (char*)&znpBuf[9];
+            char* msg = (char*)&znpBuf[6];
             printf("DEBUG: %s" , msg);
             
             for(int i = 0 ; i < znpBuf[SRSP_LENGTH_FIELD]; ++i)
@@ -66,7 +66,7 @@ void pollAndDisplay()
             
             znpBuf[SRSP_LENGTH_FIELD] = 0;
             
-            displayString(msg);
+//            displayString(msg);
         } 
 }
 

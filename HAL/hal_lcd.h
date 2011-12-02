@@ -9,17 +9,13 @@
 
 //   Conditions for 9600 Baud SW UART, SMCLK = 1MHz
 #define     Bitime                13       // 1,000,000 / 8 / 9600 = ~13
-
-// variables for serial communication
-unsigned char BitCnt;
-unsigned int  TXByte;
-
-// How many times have we pushed the button?
-unsigned int  buttonPresses = 0;
+#define     DISPLAY_DURATION      200000
 
 // function prototypes
+void sendCommand(char cmd);
+void displayString(char *string);
 void TXString(char *string);
-void ConfigureTimerUart(void);
+void ConfigureTimerUart();
 void Transmit();
 void brag(void);
 void itoa(unsigned int val, char *str, unsigned int limit);
@@ -95,72 +91,4 @@ void itoa(unsigned int val, char *str, unsigned int limit);
 //}
 
 // Output the number of button presses to LCD
-void displayString(char *string)
-{
-  // Clear LCD
-  TXByte = 0xFE; Transmit();
-  TXByte = 0x01; Transmit();
-  TXString(string);
-}
-
-// Transmit a string via serial UART by looping through it and transmitting
-// each character one at a time.
-void TXString(char *string)
-{
-  while(*string != 0)
-  {
-    TXByte = *string; Transmit();
-    string++;
-  }
-}
-
-// Set up timer for simulated UART. Copied from MSP430 LaunchPad sample code.
-void ConfigureTimerUart(void)
-{
-  TACCTL0 = OUT;                             // TXD Idle as Mark
-  TACTL = TASSEL_2 + MC_2 + ID_3;            // SMCLK/8, continuous mode
-  P2SEL |= TXD;                              //
-  P2DIR |= TXD; 
-  
-  __delay_cycles(1000000);
-  TXByte = 0x7c; Transmit();
-  TXByte = 157; Transmit();//
-}
-
-// Function Transmits Character from TXByte
-// Copied from MSP430 LaunchPad sample code
-void Transmit()
-{
-  BitCnt = 0xA;                             // Load Bit counter, 8data + ST/SP
-  while (TACCR0 != TAR)                       // Prevent async capture
-    TACCR0 = TAR;                             // Current state of TA counter
-  TACCR0 += Bitime;                     // Some time till first bit
-  TXByte |= 0x100;                        // Add mark stop bit to TXByte
-  TXByte = TXByte << 1;                 // Add space start bit
-  TACCTL0 =  CCIS0 + OUTMOD0 + CCIE;          // TXD = mark = idle
-  while ( TACCTL0 & CCIE );                   // Wait for TX completion
-}
-
-// Timer A0 interrupt service routine
-// Copied from MSP430 LaunchPad sample code
-#pragma vector=TIMERA0_VECTOR
-__interrupt void Timer_A (void)
-{
-  TACCR0 += Bitime;                           // Add Offset to CCR0
-  if (TACCTL0 & CCIS0)                        // TX on CCI0B?
-  {
-    if ( BitCnt == 0)
-      TACCTL0 &= ~ CCIE;                     // All bits TXed, disable interrupt
-    else
-    {
-      TACCTL0 |=  OUTMOD2;                    // TX Space
-      if (TXByte & 0x01)
-      TACCTL0 &= ~ OUTMOD2;                   // TX Mark
-      TXByte = TXByte >> 1;
-      BitCnt --;
-    }
-  }
-}
-
-
 #endif

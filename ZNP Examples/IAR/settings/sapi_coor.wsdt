@@ -4,55 +4,122 @@
   <ConfigDictionary>
     <CurrentConfigs>
       <Project>Basic Comms - Coordinator - SAPI/Debug</Project>
+      <Project>Basic Comms - Router - SAPI/Debug</Project>
     </CurrentConfigs>
+    <CurrentProj>Basic Comms - Router - SAPI</CurrentProj>
+    <OverviewSelected>0</OverviewSelected>
   </ConfigDictionary>
   <Desktop>
     <Static>
       <Workspace>
         <ColumnWidths>
-          <Column0>124</Column0>
+          <Column0>224</Column0>
           <Column1>27</Column1>
           <Column2>27</Column2>
           <Column3>27</Column3>
         </ColumnWidths>
       </Workspace>
+      <Find-in-Files>
+        <ColumnWidth0>496</ColumnWidth0>
+        <ColumnWidth1>70</ColumnWidth1>
+        <ColumnWidth2>850</ColumnWidth2>
+      </Find-in-Files>
+      <Build>
+        <ColumnWidth0>20</ColumnWidth0>
+        <ColumnWidth1>1035</ColumnWidth1>
+        <ColumnWidth2>276</ColumnWidth2>
+        <ColumnWidth3>69</ColumnWidth3>
+      </Build>
+      <TerminalIO/>
+      <Debug-Log>
+        <ColumnWidth0>20</ColumnWidth0>
+        <ColumnWidth1>1381</ColumnWidth1>
+      </Debug-Log>
     </Static>
     <Windows>
-      <Wnd1>
+      <Wnd2>
         <Tabs>
           <Tab>
-            <Identity>TabID-32219-10251</Identity>
+            <Identity>TabID-20395-24830</Identity>
             <TabName>Workspace</TabName>
             <Factory>Workspace</Factory>
             <Session>
               <NodeDict>
                 <ExpandedNode>Basic Comms - Coordinator - SAPI</ExpandedNode>
                 <ExpandedNode>Basic Comms - Coordinator - SAPI/HAL</ExpandedNode>
+                <ExpandedNode>Basic Comms - Coordinator - SAPI/znp_example_utils.c</ExpandedNode>
+                <ExpandedNode>Basic Comms - Router - SAPI</ExpandedNode>
               </NodeDict>
             </Session>
           </Tab>
         </Tabs>
         <SelectedTab>0</SelectedTab>
-      </Wnd1>
+      </Wnd2>
+      <Wnd3>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-15167-24928</Identity>
+            <TabName>Find in Files</TabName>
+            <Factory>Find-in-Files</Factory>
+            <Session/>
+          </Tab>
+          <Tab>
+            <Identity>TabID-17740-26313</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+          <Tab>
+            <Identity>TabID-5486-26747</Identity>
+            <TabName>Debug Log</TabName>
+            <Factory>Debug-Log</Factory>
+            <Session/>
+          </Tab>
+        </Tabs>
+        <SelectedTab>1</SelectedTab>
+      </Wnd3>
     </Windows>
     <Editor>
       <Pane>
         <Tab>
           <Factory>TextEditor</Factory>
-          <Filename>$WS_DIR$\..\..\..\..\..\..\Program Files\IAR Systems\Embedded Workbench 6.0 Evaluation\430\doc\infocenter\index.ENU.html</Filename>
+          <Filename>$WS_DIR$\..\..\..\..\..\..\Program Files (x86)\IAR Systems\Embedded Workbench 6.0 Evaluation\430\doc\infocenter\index.ENU.html</Filename>
+        </Tab>
+        <Tab>
+          <Factory>TextEditor</Factory>
+          <Filename>$WS_DIR$\..\example_basic_comms_coordinator_sapi.c</Filename>
+          <XPos>0</XPos>
+          <YPos>35</YPos>
+          <SelStart>2277</SelStart>
+          <SelEnd>2277</SelEnd>
+        </Tab>
+        <Tab>
+          <Factory>TextEditor</Factory>
+          <Filename>$WS_DIR$\..\..\ZNP\znp_interface_spi.c</Filename>
+          <XPos>0</XPos>
+          <YPos>53</YPos>
+          <SelStart>3685</SelStart>
+          <SelEnd>3685</SelEnd>
         </Tab>
         <Tab>
           <Factory>TextEditor</Factory>
           <Filename>$WS_DIR$\..\znp_example_utils.c</Filename>
           <XPos>0</XPos>
-          <YPos>21</YPos>
-          <SelStart>2429</SelStart>
-          <SelEnd>2429</SelEnd>
+          <YPos>36</YPos>
+          <SelStart>1854</SelStart>
+          <SelEnd>1854</SelEnd>
         </Tab>
-        <ActiveTab>1</ActiveTab>
         <Tab>
           <Factory>TextEditor</Factory>
-          <Filename>$WS_DIR$\..\example_basic_comms_coordinator_sapi.c</Filename>
+          <Filename>$WS_DIR$\..\..\HAL\hal_lcd.c</Filename>
+          <XPos>0</XPos>
+          <YPos>18</YPos>
+          <SelStart>718</SelStart>
+          <SelEnd>718</SelEnd>
+        </Tab>
+        <Tab>
+          <Factory>TextEditor</Factory>
+          <Filename>$WS_DIR$\..\znp_example_utils.h</Filename>
           <XPos>0</XPos>
           <YPos>0</YPos>
           <SelStart>0</SelStart>
@@ -60,12 +127,13 @@
         </Tab>
         <Tab>
           <Factory>TextEditor</Factory>
-          <Filename>$WS_DIR$\..\..\HAL\hal_lcd.h</Filename>
+          <Filename>$WS_DIR$\..\example_basic_comms_router_sapi.c</Filename>
           <XPos>0</XPos>
-          <YPos>75</YPos>
-          <SelStart>2400</SelStart>
-          <SelEnd>2413</SelEnd>
+          <YPos>46</YPos>
+          <SelStart>2520</SelStart>
+          <SelEnd>2520</SelEnd>
         </Tab>
+        <ActiveTab>6</ActiveTab>
       </Pane>
       <ActivePane>0</ActivePane>
       <Sizes>
@@ -80,31 +148,40 @@
       <Top>
         <Row0>
           <Sizes>
-            <Toolbar-00d912d8>
+            <Toolbar-00f7f998>
               <key>iaridepm.enu1</key>
-            </Toolbar-00d912d8>
+            </Toolbar-00f7f998>
           </Sizes>
         </Row0>
+        <Row1>
+          <Sizes/>
+        </Row1>
+        <Row2>
+          <Sizes/>
+        </Row2>
+        <Row3>
+          <Sizes/>
+        </Row3>
       </Top>
       <Left>
         <Row0>
           <Sizes>
-            <Wnd1>
+            <Wnd2>
               <Rect>
                 <Top>-2</Top>
                 <Left>-2</Left>
-                <Bottom>953</Bottom>
-                <Right>198</Right>
+                <Bottom>575</Bottom>
+                <Right>298</Right>
                 <x>-2</x>
                 <y>-2</y>
                 <xscreen>200</xscreen>
                 <yscreen>200</yscreen>
-                <sizeHorzCX>104167</sizeHorzCX>
-                <sizeHorzCY>200401</sizeHorzCY>
-                <sizeVertCX>104167</sizeVertCX>
-                <sizeVertCY>956914</sizeVertCY>
+                <sizeHorzCX>138889</sizeHorzCX>
+                <sizeHorzCY>244499</sizeHorzCY>
+                <sizeVertCX>208333</sizeVertCX>
+                <sizeVertCY>705379</sizeVertCY>
               </Rect>
-            </Wnd1>
+            </Wnd2>
           </Sizes>
         </Row0>
       </Left>
@@ -115,7 +192,24 @@
       </Right>
       <Bottom>
         <Row0>
-          <Sizes/>
+          <Sizes>
+            <Wnd3>
+              <Rect>
+                <Top>-2</Top>
+                <Left>-2</Left>
+                <Bottom>198</Bottom>
+                <Right>1442</Right>
+                <x>-2</x>
+                <y>-2</y>
+                <xscreen>1444</xscreen>
+                <yscreen>200</yscreen>
+                <sizeHorzCX>1002778</sizeHorzCX>
+                <sizeHorzCY>244499</sizeHorzCY>
+                <sizeVertCX>138889</sizeVertCX>
+                <sizeVertCY>244499</sizeVertCY>
+              </Rect>
+            </Wnd3>
+          </Sizes>
         </Row0>
       </Bottom>
       <Float>

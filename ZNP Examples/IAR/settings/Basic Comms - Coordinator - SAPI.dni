@@ -1,13 +1,13 @@
 [DebugChecksum]
-Checksum=24631361
+Checksum=603845475
 [State Storage]
-Control Register=35404
+Control Register=0
 [Sequencer]
-Control Register=35404
-NextState0=35404
-NextState1=35404
+Control Register=0
+NextState0=0
+NextState1=0
 [Action Register]
-Break=1
+Break=2
 State Storage=1
 [DisAssemblyWindow]
 NumStates=_ 1
@@ -36,13 +36,17 @@ UseTrigger=1
 TriggerName=main
 LimitSize=0
 ByteLimit=50
-[TermIOLog]
-LoggingEnabled=_ 0
-LogFile=_ ""
 [CallStack]
 ShowArgs=0
 [Disassembly]
 MixedMode=1
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
 [CallStackLog]
 Enabled=0
 [DriverProfiling]
@@ -50,12 +54,10 @@ Enabled=0
 Mode=0
 Graph=0
 Symbiont=0
-[Log file]
-LoggingEnabled=_ 0
-LogFile=_ ""
-Category=_ 0
 [Breakpoints]
-Count=0
+Bp0=_ "STD_CODE" "{$PROJ_DIR$\..\..\HAL\hal_cc2530znp_target_board.c}.108.13" 0 0 0 0 "" 0 ""
+Bp1=_ "STD_CODE" "{$PROJ_DIR$\..\..\ZNP\znp_interface.c}.313.5" 0 0 0 0 "" 0 ""
+Count=2
 [FET]
 Clock mode=38
 Extended Clock mode=-1

@@ -19,19 +19,19 @@
           
           
           
-        <Column0>311</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+        <Column0>215</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
       </Workspace>
       <Disassembly>
         
         
         
       <MixedMode>1</MixedMode><CodeCovShow>1</CodeCovShow><InstrProfShow>1</InstrProfShow><col-names><item>Disassembly</item><item>_I0</item></col-names><col-widths><item>500</item><item>20</item></col-widths><DisasmHistory/><ShowCodeCoverage>0</ShowCodeCoverage><ShowInstrProfiling>0</ShowInstrProfiling></Disassembly>
-    </Static>
+    <Find-in-Files><ColumnWidth0>210</ColumnWidth0><ColumnWidth1>30</ColumnWidth1><ColumnWidth2>361</ColumnWidth2></Find-in-Files><WATCH_1><expressions><item>TXByte</item><item>string</item><item>*string</item><item>fmt</item><item>msg</item><item>znpBuf</item><item></item></expressions><col-names><item>Expression</item><item>Location</item><item>Type</item><item>Value</item></col-names><col-widths><item>100</item><item>150</item><item>100</item><item>99</item></col-widths></WATCH_1></Static>
     <Windows>
       
       
       
-    <Wnd3>
+    <Wnd1>
         <Tabs>
           <Tab>
             <Identity>TabID-15721-2270</Identity>
@@ -45,9 +45,9 @@
             <Factory>Build</Factory>
             <Session/>
           </Tab>
-        </Tabs>
+        <Tab><Identity>TabID-27770-26715</Identity><TabName>Find in Files</TabName><Factory>Find-in-Files</Factory><Session/></Tab></Tabs>
         
-      <SelectedTab>0</SelectedTab></Wnd3><Wnd4>
+      <SelectedTab>0</SelectedTab></Wnd1><Wnd2>
         <Tabs>
           <Tab>
             <Identity>TabID-26469-2273</Identity>
@@ -55,11 +55,11 @@
             <Factory>Workspace</Factory>
             <Session>
               
-            <NodeDict><ExpandedNode>Basic Comms - Coordinator - SAPI</ExpandedNode></NodeDict></Session>
+            <NodeDict><ExpandedNode>Basic Comms - Coordinator - SAPI</ExpandedNode><ExpandedNode>Basic Comms - Coordinator - SAPI/HAL</ExpandedNode></NodeDict></Session>
           </Tab>
         </Tabs>
         
-      <SelectedTab>0</SelectedTab></Wnd4><Wnd5>
+      <SelectedTab>0</SelectedTab></Wnd2><Wnd6>
         <Tabs>
           <Tab>
             <Identity>TabID-4449-2277</Identity>
@@ -69,20 +69,20 @@
           </Tab>
         </Tabs>
         
-      <SelectedTab>0</SelectedTab></Wnd5></Windows>
+      <SelectedTab>0</SelectedTab></Wnd6><Wnd7><Tabs><Tab><Identity>TabID-7670-8284</Identity><TabName>Watch 1</TabName><Factory>WATCH_1</Factory></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd7></Windows>
     <Editor>
       
       
       
       
-    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\example_basic_comms_coordinator_sapi.c</Filename><XPos>0</XPos><YPos>108</YPos><SelStart>5121</SelStart><SelEnd>5121</SelEnd></Tab><ActiveTab>0</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\znp_example_utils.c</Filename><XPos>0</XPos><YPos>15</YPos><SelStart>1195</SelStart><SelEnd>1195</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\..\..\Program Files (x86)\IAR Systems\Embedded Workbench 6.0 Evaluation\430\doc\infocenter\index.ENU.html</Filename></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\example_basic_comms_coordinator_sapi.c</Filename><XPos>0</XPos><YPos>35</YPos><SelStart>2277</SelStart><SelEnd>2277</SelEnd></Tab><ActiveTab>1</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\ZNP\znp_interface_spi.c</Filename><XPos>0</XPos><YPos>53</YPos><SelStart>3685</SelStart><SelEnd>3685</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\znp_example_utils.c</Filename><XPos>0</XPos><YPos>36</YPos><SelStart>1854</SelStart><SelEnd>1854</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\HAL\hal_lcd.c</Filename><XPos>0</XPos><YPos>18</YPos><SelStart>718</SelStart><SelEnd>718</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\znp_example_utils.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
     <Positions>
       
       
       
       
       
-    <Top><Row0><Sizes><Toolbar-01bfdd70><key>iaridepm.enu1</key></Toolbar-01bfdd70></Sizes></Row0><Row1><Sizes><Toolbar-01c928c0><key>debuggergui.enu1</key></Toolbar-01c928c0></Sizes></Row1><Row2><Sizes><Toolbar-029cc560><key>430fet1</key></Toolbar-029cc560></Sizes></Row2></Top><Left><Row0><Sizes><Wnd4><Rect><Top>-2</Top><Left>-2</Left><Bottom>663</Bottom><Right>385</Right><x>-2</x><y>-2</y><xscreen>267</xscreen><yscreen>244</yscreen><sizeHorzCX>139063</sizeHorzCX><sizeHorzCY>244489</sizeHorzCY><sizeVertCX>201563</sizeVertCX><sizeVertCY>666333</sizeVertCY></Rect></Wnd4></Sizes></Row0></Left><Right><Row0><Sizes><Wnd5><Rect><Top>-2</Top><Left>-2</Left><Bottom>663</Bottom><Right>265</Right><x>-2</x><y>-2</y><xscreen>267</xscreen><yscreen>244</yscreen><sizeHorzCX>139063</sizeHorzCX><sizeHorzCY>244489</sizeHorzCY><sizeVertCX>139063</sizeVertCX><sizeVertCY>666333</sizeVertCY></Rect></Wnd5></Sizes></Row0></Right><Bottom><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>242</Bottom><Right>1922</Right><x>-2</x><y>-2</y><xscreen>1924</xscreen><yscreen>244</yscreen><sizeHorzCX>1002083</sizeHorzCX><sizeHorzCY>244489</sizeHorzCY><sizeVertCX>139063</sizeVertCX><sizeVertCY>244489</sizeVertCY></Rect></Wnd3></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+    <Top><Row0><Sizes><Toolbar-00f7f998><key>iaridepm.enu1</key></Toolbar-00f7f998></Sizes></Row0><Row1><Sizes><Toolbar-00ff0788><key>debuggergui.enu1</key></Toolbar-00ff0788></Sizes></Row1><Row2><Sizes><Toolbar-00ff06c0><key>430fet1</key></Toolbar-00ff06c0></Sizes></Row2></Top><Left><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>527</Bottom><Right>289</Right><x>-2</x><y>-2</y><xscreen>201</xscreen><yscreen>200</yscreen><sizeHorzCX>139583</sizeHorzCX><sizeHorzCY>244499</sizeHorzCY><sizeVertCX>202083</sizeVertCX><sizeVertCY>646699</sizeVertCY></Rect></Wnd2></Sizes></Row0></Left><Right><Row0><Sizes><Wnd6><Rect><Top>-2</Top><Left>-2</Left><Bottom>527</Bottom><Right>196</Right><x>-2</x><y>-2</y><xscreen>201</xscreen><yscreen>200</yscreen><sizeHorzCX>139583</sizeHorzCX><sizeHorzCY>244499</sizeHorzCY><sizeVertCX>137500</sizeVertCX><sizeVertCY>646699</sizeVertCY></Rect></Wnd6></Sizes></Row0><Row1><Sizes><Wnd7><Rect><Top>-2</Top><Left>194</Left><Bottom>527</Bottom><Right>429</Right><x>194</x><y>-2</y><xscreen>211</xscreen><yscreen>238</yscreen><sizeHorzCX>146528</sizeHorzCX><sizeHorzCY>290954</sizeHorzCY><sizeVertCX>163194</sizeVertCX><sizeVertCY>646699</sizeVertCY></Rect></Wnd7></Sizes></Row1></Right><Bottom><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>198</Bottom><Right>1442</Right><x>-2</x><y>-2</y><xscreen>1444</xscreen><yscreen>200</yscreen><sizeHorzCX>1002778</sizeHorzCX><sizeHorzCY>244499</sizeHorzCY><sizeVertCX>139583</sizeVertCX><sizeVertCY>244499</sizeVertCY></Rect></Wnd1></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
   </Desktop>
 </Project>
 

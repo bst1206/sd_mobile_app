@@ -31,7 +31,7 @@
 * OR ITS LICENSORS BE LIABLE OR OBLIGATED UNDER CONTRACT, NEGLIGENCE, STRICT LIABILITY, CONTRIBUTION, 
 * BREACH OF WARRANTY, OR OTHER LEGAL EQUITABLE THEORY ANY DIRECT OR INDIRECT DAMAGES OR EXPENSES
 * INCLUDING BUT NOT LIMITED TO ANY INCIDENTAL, SPECIAL, INDIRECT, PUNITIVE OR CONSEQUENTIAL DAMAGES, 
-* LOST PROFITS OR LOST DATA, COST OF PROCUREMENT OF SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY 
+* LOST PROFITS OR LOST DATA, -COST OF PROCUREMENT OF SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY 
 * CLAIMS BY THIRD PARTIES (INCLUDING BUT NOT LIMITED TO ANY DEFENSE THEREOF), OR OTHER SIMILAR COSTS.
 */
 #include "../HAL/hal.h"
@@ -154,23 +154,35 @@ int main( void )
       if(msglen == 0) //if first byte,
       {
         expectedLength = inChar-'0';
-        expectedLength <<= 8;
-        msglen++;
-      }
-      else if(msglen == 1) //if second byte,
-      {
-        expectedLength += inChar-'0';
-        msglen++;
-        printf("DEBUG: expeceted message length: %d\r\n", expectedLength);
-        if(expectedLength == 0)
+        if(expectedLength > 32)
         {
-         clearmsg();
+          expectedLength = 32;
+          printf("DEBUG: expeceted message length: %d\r\n", expectedLength);
+          msglen++;
+        }
+        else if(expectedLength < 0)
+        {
+          clearmsg();
+        }
+        else{
+          printf("DEBUG: expeceted message length: %d\r\n", expectedLength);
+          msglen++;
         }
       }
+//      else if(msglen == 1) //if second byte,
+//      {
+//        expectedLength += inChar-'0';
+//        msglen++;
+//        printf("DEBUG: expeceted message length: %d\r\n", expectedLength);
+//        if(expectedLength == 0)
+//        {
+//         clearmsg();
+//        }
+//      }
       else
       {
         appendmsg();
-        if(msglen-2 == expectedLength)
+        if(msglen-1 == expectedLength)
         {
           printf("Sending Message %s of length %d\r\n", msg, expectedLength);
           sendData(0,TEST_CLUSTER, msg, msglen);
@@ -196,7 +208,7 @@ void clearmsg()
 
 void appendmsg()
 {
-  msg[msglen-2] = inChar;
+  msg[msglen-1] = inChar;
   msglen++;
 }
 

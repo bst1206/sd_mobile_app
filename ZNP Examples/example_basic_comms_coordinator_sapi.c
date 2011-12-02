@@ -52,7 +52,7 @@ int main( void )
     printf("\r\n++++++++++++++++++++++++++++++++++++++++++++++++++++\r\n");        
     printf("\r\nBasic Communications Example - COORDINATOR - using Simple API\r\n");
     HAL_ENABLE_INTERRUPTS();
-    setLed(0);
+//    setLed(0);
     //Simple check to ensure that both security options weren't #defined.
 #if defined(USE_SECURITY_MODE_PRECONFIGURED_KEYS) && defined(USE_SECURITY_MODE_COORD_DIST_KEYS)
     printf("ERROR\r\n");
@@ -78,6 +78,15 @@ int main( void )
     printf("Setting Zigbee Device Type\r\n"); 
     setZigbeeDeviceType(COORDINATOR);
     handleReturnValue();
+    
+//    /* Setting the channel*/
+//    printf("Setting the channel");
+//    setChannel(CHANNEL_20);
+//    handleReturnValue();
+//
+//    printf("Reset the ZNP\r\n");    
+//    znpReset();
+//    handleReturnValue();
     
     /* Enabling Callbacks (required to receive ZDO_IEEE_ADDR_RSP)  */
     printf("Enabling Callbacks\r\n"); 
@@ -124,7 +133,7 @@ int main( void )
     handleReturnValue();
     
     printf("On Network!\r\n");
-    setLed(1);
+    setLed(0);
     
     /* On network, display info about this network */
 #ifdef DISPLAY_NETWORK_INFORMATION      
@@ -133,8 +142,32 @@ int main( void )
 #endif    
     
     ConfigureTimerUart();
-    
+
     /* Now the network is running - continually poll for any received messages from the ZNP */
+    
+//    char flag = 1;
+//    for(;;)
+//    {
+//      if(flag)
+//      {
+//        sendCommand(0x01);
+//      }
+//      else{
+//       displayString("test"); 
+//      }
+//      
+//      flag = !flag;
+//    __delay_cycles(1000); //1000000
+
+        
+//    }
+    
+//    for(;;)
+//    {
+//      displayString("TEST");
+//      __delay_cycles(2000);
+//    }
+    
     displayReceivedMessages();
     
 }

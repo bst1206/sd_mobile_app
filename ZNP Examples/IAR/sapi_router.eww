@@ -2,6 +2,9 @@
 
 <workspace>
   <project>
+    <path>$WS_DIR$\Basic Comms - Coordinator - SAPI.ewp</path>
+  </project>
+  <project>
     <path>$WS_DIR$\Basic Comms - Router - SAPI.ewp</path>
   </project>
   <batchBuild/>

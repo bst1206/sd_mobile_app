@@ -10,7 +10,7 @@
     <debug>1</debug>
     <settings>
       <name>General</name>
-      <archiveVersion>8</archiveVersion>
+      <archiveVersion>7</archiveVersion>
       <data>
         <version>27</version>
         <wantNonLocal>1</wantNonLocal>
@@ -66,8 +66,8 @@
         </option>
         <option>
           <name>Input variant</name>
-          <version>1</version>
-          <state>4</state>
+          <version>0</version>
+          <state>3</state>
         </option>
         <option>
           <name>Input description</name>
@@ -75,12 +75,12 @@
         </option>
         <option>
           <name>Output variant</name>
-          <version>1</version>
-          <state>5</state>
+          <version>0</version>
+          <state>3</state>
         </option>
         <option>
           <name>Output description</name>
-          <state>No specifier a or A, no specifier n, no float or long long, no flags.</state>
+          <state>No specifier a or A, no specifier n, no float or long long.</state>
         </option>
         <option>
           <name>GRuntimeLibSelectSlave</name>
@@ -155,12 +155,12 @@
       <name>ICC430</name>
       <archiveVersion>4</archiveVersion>
       <data>
-        <version>32</version>
+        <version>30</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>1</debug>
         <option>
           <name>CCDefines</name>
-          <state>SIMPLE_API_VERBOSE</state>
+          <state></state>
         </option>
         <option>
           <name>CCPreprocFile</name>
@@ -225,7 +225,7 @@
         <option>
           <name>CCAllowList</name>
           <version>1</version>
-          <state>10010</state>
+          <state>00000</state>
         </option>
         <option>
           <name>CCObjUseModuleName</name>
@@ -349,16 +349,16 @@
         </option>
         <option>
           <name>CCOptLevel</name>
-          <state>2</state>
+          <state>1</state>
         </option>
         <option>
           <name>CCOptStrategy</name>
           <version>0</version>
-          <state>1</state>
+          <state>0</state>
         </option>
         <option>
           <name>CCOptLevelSlave</name>
-          <state>2</state>
+          <state>1</state>
         </option>
         <option>
           <name>CInput</name>
@@ -391,60 +391,12 @@
           <state>1</state>
         </option>
         <option>
+          <name>IccRelaxedFpPrecision</name>
+          <state>0</state>
+        </option>
+        <option>
           <name>CCPUTAG</name>
           <state>1</state>
-        </option>
-        <option>
-          <name>CCCodeFunctions</name>
-          <state>CODE</state>
-        </option>
-        <option>
-          <name>CCData16</name>
-          <state>DATA</state>
-        </option>
-        <option>
-          <name>CCData20</name>
-          <state>DATA</state>
-        </option>
-        <option>
-          <name>CCIntvec</name>
-          <state>INTVEC</state>
-        </option>
-        <option>
-          <name>CCCstack</name>
-          <state>CSTACK</state>
-        </option>
-        <option>
-          <name>CCRamFuncCode</name>
-          <state>RAMFUNC_CODE</state>
-        </option>
-        <option>
-          <name>CCIsrCode</name>
-          <state>ISR_CODE</state>
-        </option>
-        <option>
-          <name>CCDifunct</name>
-          <state>DIFUNCT</state>
-        </option>
-        <option>
-          <name>AggressiveInlining</name>
-          <state>0</state>
-        </option>
-        <option>
-          <name>AggressiveUnrolling</name>
-          <state>0</state>
-        </option>
-        <option>
-          <name>IccCppInlineSemantics</name>
-          <state>0</state>
-        </option>
-        <option>
-          <name>IccStaticDestr</name>
-          <state>1</state>
-        </option>
-        <option>
-          <name>IccFloatSemantics</name>
-          <state>0</state>
         </option>
       </data>
     </settings>
@@ -578,7 +530,7 @@
         </option>
         <option>
           <name>OutputFile</name>
-          <state>$FILE_BNAME$.r43</state>
+          <state></state>
         </option>
         <option>
           <name>AMultibyteSupport</name>
@@ -644,7 +596,7 @@
         </option>
         <option>
           <name>OutputFile</name>
-          <state>Backup of Basic Comms - Router - SAPI.d43</state>
+          <state>Basic Comms - Coordinator - SAPI.d43</state>
         </option>
         <option>
           <name>OutputFormat</name>
@@ -838,7 +790,7 @@
         </option>
         <option>
           <name>ExtraOutputFile</name>
-          <state>Backup of Basic Comms - Router - SAPI.a43</state>
+          <state>Basic Comms - Coordinator - SAPI.a43</state>
         </option>
         <option>
           <name>ExtraOutputFormat</name>
@@ -970,10 +922,10 @@
     </file>
   </group>
   <file>
-    <name>$PROJ_DIR$\..\example_basic_comms_router_sapi.c</name>
+    <name>$PROJ_DIR$\..\example_basic_comms_coordinator_sapi.c</name>
   </file>
   <file>
-    <name>$PROJ_DIR$\..\znp_example_utils_router.c</name>
+    <name>$PROJ_DIR$\..\znp_example_utils.c</name>
   </file>
 </project>
 

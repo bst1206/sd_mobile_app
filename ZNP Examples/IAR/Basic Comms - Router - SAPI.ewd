@@ -223,7 +223,7 @@
         </option>
         <option>
           <name>UsbComPort</name>
-          <state>HID0025:COM4</state>
+          <state>HID0080:COM8</state>
         </option>
         <option>
           <name>FetConnection</name>
@@ -313,7 +313,7 @@
         </option>
         <option>
           <name>SimPspConfigFile</name>
-          <state>###Uninitialized###</state>
+          <state>$TOOLKIT_DIR$\CONFIG\test.psp.config</state>
         </option>
       </data>
     </settings>

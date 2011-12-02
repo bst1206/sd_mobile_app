@@ -1,5 +1,5 @@
 [DebugChecksum]
-Checksum=-173625207
+Checksum=-330445788
 [DisAssemblyWindow]
 NumStates=_ 1
 State 1=_ 1
@@ -8,11 +8,11 @@ Enabled=_ 0
 [CodeCoverage]
 Enabled=_ 0
 [State Storage]
-Control Register=33798
+Control Register=33760
 [Sequencer]
-Control Register=33798
-NextState0=33798
-NextState1=33798
+Control Register=33760
+NextState0=33760
+NextState1=33760
 [Action Register]
 Break=2
 State Storage=1
@@ -56,7 +56,9 @@ Graph=0
 Symbiont=0
 [Breakpoints]
 Bp0=_ "STD_CODE" "{$PROJ_DIR$\..\..\HAL\hal_cc2530znp_target_board.c}.78.11" 0 0 0 0 "" 0 ""
-Count=1
+Bp1=_ "STD_CODE" "{$PROJ_DIR$\..\example_basic_comms_router_sapi.c}.133.5" 0 0 0 0 "" 0 ""
+Bp2=_ "STD_CODE" "{$PROJ_DIR$\..\example_basic_comms_router_sapi.c}.133.5" 0 0 0 0 "" 0 ""
+Count=3
 [FET]
 Clock mode=38
 Extended Clock mode=-1
